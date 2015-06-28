@@ -1,0 +1,50 @@
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+     <div class="well">
+		<p id="notice"><%= notice %></p>
+
+		<p>
+		  <strong>Categoria:</strong>
+		  <%= @pin.categoria %>
+		</p>
+		<p>
+		  <strong>Nombre:</strong>
+		  <%= @pin.name %>
+		</p>
+
+		<p>
+		  <strong>Imagen:</strong>
+		  <%= image_tag(@pin.avatar.url(:mediano)) %>
+		</p>
+
+		<p>
+		  <strong>Descripcion:</strong>
+		  <%= @pin.descripcion %>
+		</p>
+
+		<p>
+		  <strong>Precio:</strong>
+		  <%= @pin.price %>€
+		</p>
+		<p>
+		  <strong>Stock:</strong>
+		  <%= @pin.stock %>
+		</p>
+		<p>
+		  <strong>Referencia:</strong>
+		  <%= @pin.referencia %>
+		</p>
+
+		<%= link_to 'Back', mypins_path %> 
+		<%= link_to 'mas productos del mismo usuario', pinsof_path(@pin.user.id) %>
+
+		
+
+     </div>
+
+   </div>
+ </div>
+
+</div>

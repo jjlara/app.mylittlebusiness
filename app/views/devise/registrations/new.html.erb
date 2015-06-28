@@ -1,0 +1,66 @@
+<div class="container">
+   <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well">
+      <h2>Registrate gratis</h2>
+
+       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class= "form-group">
+        <div class="field">
+          <%= f.label :email, "Email" %><br />
+          <%= f.email_field :email, autofocus: true, :class => 'form-control', :placeholder => "Introduce un Email valido" %>
+        </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :phone, "Telefono" %><br />
+          <%= f.text_field :phone, :class => 'form-control',
+          :placeholder => "Introduce un Telefono valido" %>
+        </div>
+        <div class="field">
+          <%= f.label :address, "Direccion" %><br />
+          <%= f.text_field :address, :class => 'form-control',
+          :placeholder => "Pon la direccion de tu negocio. Ejem; C/ejemplo 18,poblacion "%>
+        </div>
+        <div class="field">
+          <%= f.label :nombrenegocio, "Nombre del Negocio" %><br />
+          <%= f.text_field :nombrenegocio, :class => 'form-control', :placeholder => "Introduce el nombre de tu negocio"%>
+        </div>
+        <div class="field">
+          <%= f.label :tipodenegocio, "Tipo de Negocio" %><br />
+          <%= f.text_field :tipodenegocio, :class => 'form-control',:placeholder => "Ejem; Peluqueria"%>
+        </div>
+        <div class="field">
+          <%= f.label :cifempresa, "Cif de Empresa" %><br />
+          <%= f.text_field :cifempresa, :class => 'form-control',
+          :placeholder => "Introduce el cif de tu empresa"%>
+        </div>
+        <div class= "form-group">
+        <div class="field">
+          <%= f.label :password %>
+          <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off", :class => 'form-control'%>
+        </div> 
+        </div>
+
+        <div class= "form-group">
+        <div class="field">
+          <%= f.label :password_confirmation %><br/>
+          <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'form-control'%>
+        </div>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Unete a nosotros", :class => 'btn btn-primary' %>
+        </div>
+      <% end %>
+
+      
+    </div>  
+   </div>
+ </div>
+</div>

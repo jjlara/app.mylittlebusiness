@@ -1,0 +1,84 @@
+
+
+
+<div class="container">
+
+
+
+
+
+<%= form_for @pin, :html => {:multipart => true} do |f| %>
+  <% if @pin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
+
+      <ul>
+      <% @pin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    
+
+
+   <div class="field">
+    <%= f.label :categoria, "Categoria" %><br>
+    <%= f.text_field :categoria, :class => 'form-control', :placeholder => "Pon una categoria" %>
+    
+   </div>
+  </div>
+
+  <div class="form-group">
+
+   <div class="field">
+    <%= f.label :name, "Nombre" %><br>
+    <%= f.text_field :name, :class => 'form-control', :placeholder => "Nombre del producto" %>
+   </div>
+  </div>
+
+  <div class="form-group">
+
+   <div class="field">
+    <%= f.label :price, "Precio" %><br>
+    <%= f.text_field :price, :class => 'form-control', :placeholder => "Pon un precio al producto" %>
+   </div>
+  </div>
+  <div class="form-group">
+
+   <div class="field">
+    <%= f.label :stock, "Stock" %><br>
+    <%= f.text_field :stock, :class => 'form-control', :placeholder => "Pon la cantidad de stock del producto (opcional)" %>
+   </div>
+  </div>
+  <div class="form-group">
+
+   <div class="field">
+    <%= f.label :referencia, "Referencia" %><br>
+    <%= f.text_field :referencia, :class => 'form-control', :placeholder => "Pon la referencia del producto (opcional)" %>
+   </div>
+  </div>
+
+ <div class="form-group">
+ 
+  <div class="field">
+    <%= f.label :descripcion, "Descripción" %><br>
+    <%= f.text_area :descripcion, :class => 'form-control',:rows => "10", :cols => "30"  %>
+   </div>
+  </div> 
+ 
+ <div class="form-group">
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+   </div>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+<% end %>
+</div>
+

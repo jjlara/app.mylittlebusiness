@@ -1,0 +1,2 @@
+module HorariosConfigsHelper
+end

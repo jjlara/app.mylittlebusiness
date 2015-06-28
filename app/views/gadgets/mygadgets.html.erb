@@ -1,0 +1,128 @@
+
+
+
+
+<div class="container">
+  <div class="jumbotron">
+ 
+  <h1>Listado de mis Gadgets</h1>
+  <p>Este Apartado quizas sea uno de los mas importantes e innovadores...  </p>
+<!-- aqui comienza el acordeon -->  
+<div class="container"> 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Saber más
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Como Todos los negocios no son iguales, la major forma es que cada usuario escoja que
+        Gadgets se ajustan mejor a las necesidades de su negocio. Para ello, se han creado
+        una serie de recursos (Gadgets), que cubren las necesidades basicas de cualquier tipo de 
+        negocio. Tan solo has de seleccionarlo, y ese recurso sera visible en las apps de
+        tus clientes, solo en tu perfil. Convinalos como desees. Toda la informacion referente
+        a cada Gadget, la tienes en la vista de Edicion.
+
+</div>
+</div>
+</div>
+</div>
+<!-- aqui termina el acordeon -->   
+
+</div>
+
+
+
+
+<div class="container">
+  
+
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Calendario</th>
+      <th>Horarios</th>
+      <th>Notificaciones Push</th>
+      <th>Chat</th>
+      <th>Paypal</th>
+      <th>Promos</th>
+      <th>Reservas Articulos</th>
+      <th>Cita Previa</th>
+      <th>Telefono Contacto</th>
+      <th>Editar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gadgets.each do |gadget| %>
+     <tr>
+        <td><% if gadget.calendar? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.calendar = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.horarios? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.horarios = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.push? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.push = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.chat? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.chat = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.paypal? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.paypal = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.promos? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.promos = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.reservasarticulos? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.reservasarticulos = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.cita_previa? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.cita_previa = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+      <td><% if gadget.llamada_telefono? %>
+        <span class="label label-success">Activado</span>
+      <% else gadget.llamada_telefono = false %>
+        <span class="label label-primary">Desactivado</span>
+      <% end %></td>
+        
+       
+        <td><%= link_to 'edit', edit_gadget_path(gadget) %>
+       <span class= "glyphicon glyphicon-edit" style= "color:green"></span>
+        </td>
+
+        
+      
+    <% end %>
+</tbody>
+</table>
+<br>
+
+
+
+
+
+</div>

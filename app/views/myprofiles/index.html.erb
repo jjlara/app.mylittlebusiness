@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="jumbotron">
+ <div class="well">
+  <h1>Mis Datos de Usuario</h1>
+  <p><h3>Comprueba que tus datos de usuario sean correctos. Para cualquier modificacion envianos un correo a info@mylittlebusiness.biz, con los datos a modificar.</h3>  </p>
+</div>
+ <% @myprofiles.each do |myprofile| %>
+  <br>
+<button type="button" class="btn btn-default btn-lg">Nombre Negocio: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= myprofile.nombredenegocio %></button>
+<button type="button" class="btn btn-default btn-lg">Tipo de Negocio: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= myprofile.tiponegocio  %></button>
+<button type="button" class="btn btn-default btn-lg">Email: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= current_user.email %></button>
+<button type="button" class="btn btn-default btn-lg">Telefono: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= myprofile.telf %></button>
+<button type="button" class="btn btn-default btn-lg">Direccion Negocio: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= myprofile.address %></button>
+<button type="button" class="btn btn-default btn-lg">Cif Empresa: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= myprofile.cif %></button>
+<button type="button" class="btn btn-default btn-lg">Creado el: </button>
+<button type="button" class="btn btn-primary btn-lg"><%= current_user.created_at %></button>
+<% end %>
+
+<br>
+<br>
+<div class="well">
+  
+  <h1>Añade más información a tu Perfil</h1>
+  <p><h3>Para que tus clientes tengan toda la información necesaria sobre tu negocio, añade más información en la descripción y en la información util. Tambien es recomendable poner una foto de perfil. Un logo comercial que identifique rapidamente a tu negocio. Toda esta información se vera reflejada en las apps en tiempo real y podras editarla cuantas veces quieras.</h3>  </p>
+
+</div>
+  <br>
+  
+<table class="table table-striped">
+
+
+  <thead>
+    <tr>
+      <th class="success">Foto Perfil</th>
+      <th class="success">Descripcion</th>
+      <th class="success">Informacion util</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myprofiles.each do |myprofile| %>
+      <tr>
+        <td><%= image_tag myprofile.fotoperfil.url :peque %></td>
+        <td><%= myprofile.description %></td>
+        <td><%= myprofile.informacion_util %></td>
+        
+        <td><%= link_to 'Show', myprofile %></td>
+        <td><%= link_to 'Edit', edit_myprofile_path(myprofile) %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+</div> 

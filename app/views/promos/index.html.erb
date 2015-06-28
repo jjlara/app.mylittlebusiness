@@ -1,0 +1,91 @@
+
+
+
+
+
+
+
+<div class="container">
+  <div class="jumbotron">
+    
+ 
+  <h1>Listado de mis Promociones</h1>
+  <p>Este Apartado es exclusivamente para ayudar a darle un empujoncito a tus ventas...
+           </p>
+
+
+         <!-- aqui comienza el acordeon -->  
+<div class="container"> 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          Saber más
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+        De todos es sabido, que los clientes siempre se sienten más a traidos por un articulo,
+         si este viene acompañado por descuento o promocion de algún tipo. Aqui tienes todo
+         lo necesario para que eso sea posible. Una foto de lo que vas a promocionar, un titulo, 
+         una descripcion y un enlace para que tenga una mayor informacion. Dentro de las apps
+         habra un apartado especifico para este proposito. Donde el usuario, podra seguir tus
+         promociones, tan solo usando el boton de seguir, dentro de tu perfil, o bien viendolo 
+         en el listado general de promociones de todos los usuarios. Esta es una herramienta muy 
+         util, y que podras editar o borrarla, siempre que lo desees.
+
+</div>
+</div>
+</div>
+</div>
+<!-- aqui termina el acordeon -->   
+</div>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      
+      <th>Foto</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Enlace</th>
+      <th>Fecha creacion</th>
+      <th>Fecha de edicion</th>
+      
+      
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @promos.each do |promo| %>
+      <tr>
+        <td><%= image_tag promo.fotospromo.url :peque %></td>
+        
+        <td><%= promo.nombre %></td>
+        <td><%= promo.descripcion %></td>
+        <td><%= promo.enlace %></td>
+        <td><%= promo.created_at %></td>
+        <td><%= promo.updated_at %></td>
+        
+        <td>
+          <%= link_to 'Show', promo %>
+          
+        </td>
+        <td><%= link_to 'Edit', edit_promo_path(promo) %></td>
+        <td><%= link_to 'Destroy', promo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Crear nueva Promoción', new_promo_path %>
+
+</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+     <div class="well">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @promo.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @promo.descripcion %>
+</p>
+
+<p>
+  <strong>Enlace:</strong>
+  <%= @promo.enlace %>
+</p>
+
+
+
+
+<p>
+  <strong>Foto:</strong>
+  <%= image_tag (@promo.fotospromo.url(:mediano)) %>
+</p>
+
+<%= link_to 'Edit', edit_promo_path(@promo) %> |
+<%= link_to 'Back', promos_path %>
+</div>
+</div>
+ </div>
+
+</div>

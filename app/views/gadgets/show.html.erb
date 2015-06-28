@@ -1,0 +1,58 @@
+<div class="container">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calendario:</strong>
+  <%= @gadget.calendar %>
+</p>
+<p>
+  <strong>Horarios:</strong>
+  <%= @gadget.horarios %>
+</p>
+<p>
+  <strong>Notificaciones Push:</strong>
+  <%= @gadget.push %>
+</p>
+<p>
+  <strong>Chat:</strong>
+  <%= @gadget.chat %>
+</p>
+<p>
+  <strong>Paypal:</strong>
+  <%= @gadget.paypal %>
+</p>
+<p>
+  <strong>Promos:</strong>
+  <%= @gadget.promos %>
+</p>
+<p>
+  <strong>Reservas Articulos:</strong>
+  <%= @gadget.reservasarticulos %>
+</p>
+<p>
+  <strong>Cita Previa:</strong>
+  <%= @gadget.cita_previa %>
+</p>
+<p>
+  <strong>Telefono de Contacto:</strong>
+  <%= @gadget.llamada_telefono %>
+</p>
+
+<p>
+  <strong>Fecha creacion:</strong>
+  <%= @gadget.created_at %>
+</p>
+
+<p>
+  <strong>Fecha de Edicion:</strong>
+  <%= @gadget.updated_at %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_gadget_path(@gadget) %> |
+
+<%= link_to 'Back', mygadgets_path %>
+
+</div>

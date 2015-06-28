@@ -1,0 +1,73 @@
+<div class="container">
+
+  <div class="jumbotron">
+ 
+  <h1>Mis Fotos de Portada</h1>
+  <p><h3>Como Suele decirse una imagen vale más que mil palabras...</h3>  </p>
+
+
+<!-- aqui comienza el acordeon -->  
+<div class="container"> 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Saber más
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Es por ello que es muy importante
+         que le dediques unos minutos y subas tu propia galeria de imagenes, más destacadas de tu negocio.
+         Puedes incluir, hasta un maximo de diez fotos, para que así, tus futuros clientes puedan ver
+         con más detalle las instalaciones de tu negocio, o bien tus mejores trabajos realizados. Automaticamente las fotos podran verse en las apps, en tiempo real, dentro de tu perfil. Editalas siempre que lo necesites.
+
+</div>
+</div>
+</div>
+</div>
+<!-- aqui termina el acordeon -->   
+
+
+
+
+</div>
+
+
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      
+      <th class="success">Fotos</th>
+      <th>Fecha creacion</th>
+      <th>Fecha de edicion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fotosprofiles.each do |fotosprofile| %>
+      <tr>
+        <td><%= image_tag fotosprofile.mis_fotos.url :peque %></td>
+        <td><%= fotosprofile.created_at %></td>
+        <td><%= fotosprofile.updated_at %></td>
+        <td><%= link_to 'Show', fotosprofile %></td>
+        <td><%= link_to 'Edit', edit_fotosprofile_path(fotosprofile) %></td>
+        <td><%= link_to 'Destroy', fotosprofile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </div>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Subir nueva foto', new_fotosprofile_path %>
+
+</div>
+</div>

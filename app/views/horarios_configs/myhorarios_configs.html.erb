@@ -1,0 +1,2478 @@
+
+
+<div class="container">
+  <div class="jumbotron">
+   <h1>Listado de Horas Personalizadas</h1>
+  <p>En este apartado podras personalizar tus horarios, de manera que los usuarios 
+    que miren tu perfil, podran ver los horarios que tu designes como visibles en
+    las apps...</p>
+
+    <!-- aqui comienza el acordeon -->  
+<div class="container"> 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          Saber más
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+        ya sea para realizar una solicitud de cita previa, o reservas de pedidos
+    en una hora establecida. Las horas marcadas como activadas son aquellas que el usuario
+    vera, al dia correspondiente asignado, de lunes a domingo. Sin duda esta es una herramienta 
+    muy practica y util, dado que al poder editarla en tiempo real, podras gestionar tus 
+    horarios disponibles de un modo mas eficaz.
+
+</div>
+</div>
+</div>
+</div>
+<!-- aqui termina el acordeon -->   
+    
+
+
+    
+
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Horarios Lunes
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+    <!-- aqui comienza el bloque de las horas personalizadas del lunes -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        
+        <td><% if horarios_config.l_0h? %>
+        <span class="label label-success">Lunes 00:00h Activado</span>
+      <% else horarios_config.l_0h = false %>
+      <span class="label label-primary">Lunes 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.l_1h? %>
+        <span class="label label-success">Lunes 01:00h Activado</span>
+      <% else horarios_config.l_1h = false %>
+      <span class="label label-primary">Lunes 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.l_2h? %>
+        <span class="label label-success">Lunes 02:00h Activado</span>
+      <% else horarios_config.l_2h = false %>
+      <span class="label label-primary">Lunes 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_3h? %>
+        <span class="label label-success">Lunes 03:00h Activado</span>
+      <% else horarios_config.l_3h = false %>
+      <span class="label label-primary">Lunes 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_4h? %>
+        <span class="label label-success">Lunes 04:00h Activado</span>
+      <% else horarios_config.l_4h = false %>
+      <span class="label label-primary">Lunes 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_5h? %>
+        <span class="label label-success">Lunes 05:00h Activado</span>
+      <% else horarios_config.l_5h = false %>
+      <span class="label label-primary">Lunes 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.l_6h? %>
+        <span class="label label-success">Lunes 06:00h Activado</span>
+      <% else horarios_config.l_6h = false %>
+      <span class="label label-primary">Lunes 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.l_7h? %>
+        <span class="label label-success">Lunes 07:00h Activado</span>
+      <% else horarios_config.l_7h = false %>
+      <span class="label label-primary">Lunes 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_730h? %>
+        <span class="label label-success">Lunes 07:30h Activado</span>
+      <% else horarios_config.l_730h = false %>
+      <span class="label label-primary">Lunes 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.l_8h? %>
+        <span class="label label-success">Lunes 08:00h Activado</span>
+      <% else horarios_config.l_8h = false %>
+      <span class="label label-primary">Lunes 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_830h? %>
+        <span class="label label-success">Lunes 08:30h Activado</span>
+      <% else horarios_config.l_830h = false %>
+      <span class="label label-primary">Lunes 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_9h? %>
+        <span class="label label-success">Lunes 09:00h Activado</span>
+      <% else horarios_config.l_9h = false %>
+      <span class="label label-primary">Lunes 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.lun_930h? %>
+        <span class="label label-success">Lunes 09:30h Activado</span>
+      <% else horarios_config.lun_930h = false %>
+      <span class="label label-primary">Lunes 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_10h? %>
+        <span class="label label-success">Lunes 10:00h Activado</span>
+      <% else horarios_config.l_10h = false %>
+      <span class="label label-primary">Lunes 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.l_1030h? %>
+        <span class="label label-success">Lunes 10:30h Activado</span>
+      <% else horarios_config.l_1030h = false %>
+      <span class="label label-primary">Lunes 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_11h? %>
+        <span class="label label-success">Lunes 11:00h Activado</span>
+      <% else horarios_config.l_11h = false %>
+      <span class="label label-primary">Lunes 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.l_1130? %>
+        <span class="label label-success">Lunes 11:30h Activado</span>
+      <% else horarios_config.l_1130 = false %>
+      <span class="label label-primary">Lunes 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_12h? %>
+        <span class="label label-success">Lunes 12:00h Activado</span>
+      <% else horarios_config.l_12h = false %>
+      <span class="label label-primary">Lunes 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.l_1230h? %>
+        <span class="label label-success">Lunes 12:30h Activado</span>
+      <% else horarios_config.l_1230h = false %>
+      <span class="label label-primary">Lunes 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_13h? %>
+        <span class="label label-success">Lunes 13:00h Activado</span>
+      <% else horarios_config.l_13h = false %>
+      <span class="label label-primary">Lunes 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_1330h? %>
+        <span class="label label-success">Lunes 13:30h Activado</span>
+      <% else horarios_config.l_1330h = false %>
+      <span class="label label-primary">Lunes 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.l_14h? %>
+        <span class="label label-success">Lunes 14:00h Activado</span>
+      <% else horarios_config.l_14h = false %>
+      <span class="label label-primary">Lunes 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_1430h? %>
+        <span class="label label-success">Lunes 14:30h Activado</span>
+      <% else horarios_config.l_1430h = false %>
+      <span class="label label-primary">Lunes 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.l_15h? %>
+        <span class="label label-success">Lunes 15:00h Activado</span>
+      <% else horarios_config.l_15h = false %>
+      <span class="label label-primary">Lunes 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_1530h? %>
+        <span class="label label-success">Lunes 15:30h Activado</span>
+      <% else horarios_config.l_1530h = false %>
+      <span class="label label-primary">Lunes 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_16h? %>
+        <span class="label label-success">Lunes 16:00h Activado</span>
+      <% else horarios_config.l_16h = false %>
+      <span class="label label-primary">Lunes 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_1630h? %>
+        <span class="label label-success">Lunes 16:30h Activado</span>
+      <% else horarios_config.l_1630h = false %>
+      <span class="label label-primary">Lunes 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.l_17h? %>
+        <span class="label label-success">Lunes 17:00h Activado</span>
+      <% else horarios_config.l_17h = false %>
+      <span class="label label-primary">Lunes 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.l_1730h? %>
+        <span class="label label-success">Lunes 17:30h Activado</span>
+      <% else horarios_config.l_1730h = false %>
+      <span class="label label-primary">Lunes 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.l_18h? %>
+        <span class="label label-success">Lunes 18:00h Activado</span>
+      <% else horarios_config.l_18h = false %>
+      <span class="label label-primary">Lunes 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_1830h? %>
+        <span class="label label-success">Lunes 18:30h Activado</span>
+      <% else horarios_config.l_1830h = false %>
+      <span class="label label-primary">Lunes 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_19h? %>
+        <span class="label label-success">Lunes 19:00h Activado</span>
+      <% else horarios_config.l_19h = false %>
+      <span class="label label-primary">Lunes 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_1930h? %>
+        <span class="label label-success">Lunes 19:30h Activado</span>
+      <% else horarios_config.l_1930h = false %>
+      <span class="label label-primary">Lunes 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_20h? %>
+        <span class="label label-success">Lunes 20:00h Activado</span>
+      <% else horarios_config.l_20h = false %>
+      <span class="label label-primary">Lunes 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_2030h? %>
+        <span class="label label-success">Lunes 20:30h Activado</span>
+      <% else horarios_config.l_2030h = false %>
+      <span class="label label-primary">Lunes 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_21h? %>
+        <span class="label label-success">Lunes 21:00h Activado</span>
+      <% else horarios_config.l_21h = false %>
+      <span class="label label-primary">Lunes 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.l_2130h? %>
+        <span class="label label-success">Lunes 21:30h Activado</span>
+      <% else horarios_config.l_2130h = false %>
+      <span class="label label-primary">Lunes 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_22h? %>
+        <span class="label label-success">Lunes 22:00h Activado</span>
+      <% else horarios_config.l_22h = false %>
+      <span class="label label-primary">Lunes 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_2230h? %>
+        <span class="label label-success">Lunes 22:30h Activado</span>
+      <% else horarios_config.l_2230h = false %>
+      <span class="label label-primary">Lunes 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.l_23h? %>
+        <span class="label label-success">Lunes 23:00h Activado</span>
+      <% else horarios_config.l_23h = false %>
+      <span class="label label-primary">Lunes 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.l_2330h? %>
+        <span class="label label-success">Lunes 23:30h Activado</span>
+      <% else horarios_config.l_2330h = false %>
+      <span class="label label-primary">Lunes 23:30h Desactivado</span>
+      <% end %></td>
+    </tr>
+
+     <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+
+        
+        <tr> 
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del lunes -->
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- aqui termina el acordeon del lunes -->
+
+
+
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Horarios Martes
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        
+        <!-- aqui comienza el bloque de las horas personalizadas del martes -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.ma_0h? %>
+        <span class="label label-success">Martes 00:00h Activado</span>
+      <% else horarios_config.ma_0h = false %>
+      <span class="label label-primary">Martes 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.ma_1h? %>
+        <span class="label label-success">Martes 01:00h Activado</span>
+      <% else horarios_config.ma_1h = false %>
+      <span class="label label-primary">Martes 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.ma_2h? %>
+        <span class="label label-success">Martes 02:00h Activado</span>
+      <% else horarios_config.ma_2h = false %>
+      <span class="label label-primary">Martes 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_3h? %>
+        <span class="label label-success">Martes 03:00h Activado</span>
+      <% else horarios_config.ma_3h = false %>
+      <span class="label label-primary">Martes 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_4h? %>
+        <span class="label label-success">Martes 04:00h Activado</span>
+      <% else horarios_config.ma_4h = false %>
+      <span class="label label-primary">Martes 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_5h? %>
+        <span class="label label-success">Martes 05:00h Activado</span>
+      <% else horarios_config.ma_5h = false %>
+      <span class="label label-primary">Martes 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.ma_6h? %>
+        <span class="label label-success">Martes 06:00h Activado</span>
+      <% else horarios_config.ma_6h = false %>
+      <span class="label label-primary">Martes 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.ma_7h? %>
+        <span class="label label-success">Martes 07:00h Activado</span>
+      <% else horarios_config.ma_7h = false %>
+      <span class="label label-primary">Martes 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_730h? %>
+        <span class="label label-success">Martes 07:30h Activado</span>
+      <% else horarios_config.ma_730h = false %>
+      <span class="label label-primary">Martes 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.ma_8h? %>
+        <span class="label label-success">Martes 08:00h Activado</span>
+      <% else horarios_config.ma_8h = false %>
+      <span class="label label-primary">Martes 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_830h? %>
+        <span class="label label-success">Martes 08:30h Activado</span>
+      <% else horarios_config.ma_830h = false %>
+      <span class="label label-primary">Martes 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_9h? %>
+        <span class="label label-success">Martes 09:00h Activado</span>
+      <% else horarios_config.ma_9h = false %>
+      <span class="label label-primary">Martes 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.ma_930h? %>
+        <span class="label label-success">Martes 09:30h Activado</span>
+      <% else horarios_config.ma_930h = false %>
+      <span class="label label-primary">Martes 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_10h? %>
+        <span class="label label-success">Martes 10:00h Activado</span>
+      <% else horarios_config.ma_10h = false %>
+      <span class="label label-primary">Martes 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.ma_1030h? %>
+        <span class="label label-success">Martes 10:30h Activado</span>
+      <% else horarios_config.ma_1030h = false %>
+      <span class="label label-primary">Martes 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_11h? %>
+        <span class="label label-success">Martes 11:00h Activado</span>
+      <% else horarios_config.ma_11h = false %>
+      <span class="label label-primary">Martes 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.martes_1130h? %>
+        <span class="label label-success">Martes 11:30h Activado</span>
+      <% else horarios_config.martes_1130h = false %>
+      <span class="label label-primary">Martes 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_12h? %>
+        <span class="label label-success">Martes 12:00h Activado</span>
+      <% else horarios_config.ma_12h = false %>
+      <span class="label label-primary">Martes 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.ma_1230h? %>
+        <span class="label label-success">Martes 12:30h Activado</span>
+      <% else horarios_config.ma_1230h = false %>
+      <span class="label label-primary">Martes 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_13h? %>
+        <span class="label label-success">Martes 13:00h Activado</span>
+      <% else horarios_config.ma_13h = false %>
+      <span class="label label-primary">Martes 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_1330h? %>
+        <span class="label label-success">Martes 13:30h Activado</span>
+      <% else horarios_config.ma_1330h = false %>
+      <span class="label label-primary">Martes 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.ma_14h? %>
+        <span class="label label-success">Martes 14:00h Activado</span>
+      <% else horarios_config.ma_14h = false %>
+      <span class="label label-primary">Martes 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_1430h? %>
+        <span class="label label-success">Martes 14:30h Activado</span>
+      <% else horarios_config.ma_1430h = false %>
+      <span class="label label-primary">Martes 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.ma_15h? %>
+        <span class="label label-success">Martes 15:00h Activado</span>
+      <% else horarios_config.ma_15h = false %>
+      <span class="label label-primary">Martes 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_1530h? %>
+        <span class="label label-success">Martes 15:30h Activado</span>
+      <% else horarios_config.ma_1530h = false %>
+      <span class="label label-primary">Martes 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_16h? %>
+        <span class="label label-success">Martes 16:00h Activado</span>
+      <% else horarios_config.ma_16h = false %>
+      <span class="label label-primary">Martes 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_1630h? %>
+        <span class="label label-success">Martes 16:30h Activado</span>
+      <% else horarios_config.ma_1630h = false %>
+      <span class="label label-primary">Martes 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.ma_17h? %>
+        <span class="label label-success">Martes 17:00h Activado</span>
+      <% else horarios_config.ma_17h = false %>
+      <span class="label label-primary">Martes 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.ma_1730h? %>
+        <span class="label label-success">Martes 17:30h Activado</span>
+      <% else horarios_config.ma_1730h = false %>
+      <span class="label label-primary">Martes 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.ma_18h? %>
+        <span class="label label-success">Martes 18:00h Activado</span>
+      <% else horarios_config.ma_18h = false %>
+      <span class="label label-primary">Martes 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_1830h? %>
+        <span class="label label-success">Martes 18:30h Activado</span>
+      <% else horarios_config.ma_1830h = false %>
+      <span class="label label-primary">Martes 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_19h? %>
+        <span class="label label-success">Martes 19:00h Activado</span>
+      <% else horarios_config.ma_19h = false %>
+      <span class="label label-primary">Martes 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_1930h? %>
+        <span class="label label-success">Martes 19:30h Activado</span>
+      <% else horarios_config.ma_1930h = false %>
+      <span class="label label-primary">Martes 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_20h? %>
+        <span class="label label-success">Martes 20:00h Activado</span>
+      <% else horarios_config.ma_20h = false %>
+      <span class="label label-primary">Martes 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_2030h? %>
+        <span class="label label-success">Martes 20:30h Activado</span>
+      <% else horarios_config.ma_2030h = false %>
+      <span class="label label-primary">Martes 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_21h? %>
+        <span class="label label-success">Martes 21:00h Activado</span>
+      <% else horarios_config.ma_21h = false %>
+      <span class="label label-primary">Martes 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.ma_2130h? %>
+        <span class="label label-success">Martes 21:30h Activado</span>
+      <% else horarios_config.ma_2130h = false %>
+      <span class="label label-primary">Martes 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_22h? %>
+        <span class="label label-success">Martes 22:00h Activado</span>
+      <% else horarios_config.ma_22h = false %>
+      <span class="label label-primary">Martes 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_2230h? %>
+        <span class="label label-success">Martes 22:30h Activado</span>
+      <% else horarios_config.ma_2230h = false %>
+      <span class="label label-primary">Martes 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.ma_23h? %>
+        <span class="label label-success">Martes 23:00h Activado</span>
+      <% else horarios_config.ma_23h = false %>
+      <span class="label label-primary">Martes 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.ma_2330h? %>
+        <span class="label label-success">Martes 23:30h Activado</span>
+      <% else horarios_config.ma_2330h = false %>
+      <span class="label label-primary">Martes 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr> 
+
+          <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del martes -->  
+
+
+
+      </div>
+    </div>
+  </div>
+<!-- aqui termina el acordeon del martes -->
+
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Horarios Miercoles
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        
+        <!-- aqui comienza el bloque de las horas personalizadas del miercoles -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.mi_0h? %>
+        <span class="label label-success">Miercoles 00:00h Activado</span>
+      <% else horarios_config.mi_0h = false %>
+      <span class="label label-primary">Miercoles 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.mi_1h? %>
+        <span class="label label-success">Miercoles 01:00h Activado</span>
+      <% else horarios_config.mi_1h = false %>
+      <span class="label label-primary">Miercoles 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.mi_2h? %>
+        <span class="label label-success">Miercoles 02:00h Activado</span>
+      <% else horarios_config.mi_2h = false %>
+      <span class="label label-primary">Miercoles 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_3h? %>
+        <span class="label label-success">Miercoles 03:00h Activado</span>
+      <% else horarios_config.mi_3h = false %>
+      <span class="label label-primary">Miercoles 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_4h? %>
+        <span class="label label-success">Miercoles 04:00h Activado</span>
+      <% else horarios_config.mi_4h = false %>
+      <span class="label label-primary">Miercoles 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_5h? %>
+        <span class="label label-success">Miercoles 05:00h Activado</span>
+      <% else horarios_config.mi_5h = false %>
+      <span class="label label-primary">Miercoles 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.mi_6h? %>
+        <span class="label label-success">Miercoles 06:00h Activado</span>
+      <% else horarios_config.mi_6h = false %>
+      <span class="label label-primary">Miercoles 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.mi_7h? %>
+        <span class="label label-success">Miercoles 07:00h Activado</span>
+      <% else horarios_config.mi_7h = false %>
+      <span class="label label-primary">Miercoles 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_730h? %>
+        <span class="label label-success">Miercoles 07:30h Activado</span>
+      <% else horarios_config.mi_730h = false %>
+      <span class="label label-primary">Miercoles 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.mi_8h? %>
+        <span class="label label-success">Miercoles 08:00h Activado</span>
+      <% else horarios_config.mi_8h = false %>
+      <span class="label label-primary">Miercoles 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_830h? %>
+        <span class="label label-success">Miercoles 08:30h Activado</span>
+      <% else horarios_config.ma_830h = false %>
+      <span class="label label-primary">Miercoles 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_9h? %>
+        <span class="label label-success">Miercoles 09:00h Activado</span>
+      <% else horarios_config.mi_9h = false %>
+      <span class="label label-primary">Miercoles 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.mi_930h? %>
+        <span class="label label-success">Miercoles 09:30h Activado</span>
+      <% else horarios_config.ma_930h = false %>
+      <span class="label label-primary">Miercoles 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.miercoles_10h? %>
+        <span class="label label-success">Miercoles 10:00h Activado</span>
+      <% else horarios_config.miercoles_10h = false %>
+      <span class="label label-primary">Miercoles 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.mi_1030h? %>
+        <span class="label label-success">Miercoles 10:30h Activado</span>
+      <% else horarios_config.mi_1030h = false %>
+      <span class="label label-primary">Miercoles 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_11h? %>
+        <span class="label label-success">Miercoles 11:00h Activado</span>
+      <% else horarios_config.mi_11h = false %>
+      <span class="label label-primary">Miercoles 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.mi_1130h? %>
+        <span class="label label-success">Miercoles 11:30h Activado</span>
+      <% else horarios_config.mi_1130h = false %>
+      <span class="label label-primary">Miercoles 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_12h? %>
+        <span class="label label-success">Miercoles 12:00h Activado</span>
+      <% else horarios_config.mi_12h = false %>
+      <span class="label label-primary">Miercoles 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.mi_1230h? %>
+        <span class="label label-success">Miercoles 12:30h Activado</span>
+      <% else horarios_config.mi_1230h = false %>
+      <span class="label label-primary">Miercoles 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_13h? %>
+        <span class="label label-success">Miercoles 13:00h Activado</span>
+      <% else horarios_config.mi_13h = false %>
+      <span class="label label-primary">Miercoles 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_1330h? %>
+        <span class="label label-success">Miercoles 13:30h Activado</span>
+      <% else horarios_config.mi_1330h = false %>
+      <span class="label label-primary">Miercoles 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.mi_14h? %>
+        <span class="label label-success">Miercoles 14:00h Activado</span>
+      <% else horarios_config.mi_14h = false %>
+      <span class="label label-primary">Miercoles 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_1430h? %>
+        <span class="label label-success">Miercoles 14:30h Activado</span>
+      <% else horarios_config.mi_1430h = false %>
+      <span class="label label-primary">Miercoles 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.mi_15h? %>
+        <span class="label label-success">Miercoles 15:00h Activado</span>
+      <% else horarios_config.mi_15h = false %>
+      <span class="label label-primary">Miercoles 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_1530h? %>
+        <span class="label label-success">Miercoles 15:30h Activado</span>
+      <% else horarios_config.mi_1530h = false %>
+      <span class="label label-primary">Miercoles 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_16h? %>
+        <span class="label label-success">Miercoles 16:00h Activado</span>
+      <% else horarios_config.mi_16h = false %>
+      <span class="label label-primary">Miercoles 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_1630h? %>
+        <span class="label label-success">Miercoles 16:30h Activado</span>
+      <% else horarios_config.mi_1630h = false %>
+      <span class="label label-primary">Miercoles 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.mi_17h? %>
+        <span class="label label-success">Miercoles 17:00h Activado</span>
+      <% else horarios_config.mi_17h = false %>
+      <span class="label label-primary">Miercoles 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.mi_1730h? %>
+        <span class="label label-success">Miercoles 17:30h Activado</span>
+      <% else horarios_config.mi_1730h = false %>
+      <span class="label label-primary">Miercoles 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.mi_18h? %>
+        <span class="label label-success">Miercoles 18:00h Activado</span>
+      <% else horarios_config.mi_18h = false %>
+      <span class="label label-primary">Miercoles 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_1830h? %>
+        <span class="label label-success">Miercoles 18:30h Activado</span>
+      <% else horarios_config.mi_1830h = false %>
+      <span class="label label-primary">Miercoles 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_19h? %>
+        <span class="label label-success">Miercoles 19:00h Activado</span>
+      <% else horarios_config.mi_19h = false %>
+      <span class="label label-primary">Miercoles 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_1930h? %>
+        <span class="label label-success">Miercoles 19:30h Activado</span>
+      <% else horarios_config.mi_1930h = false %>
+      <span class="label label-primary">Miercoles 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_20h? %>
+        <span class="label label-success">Miercoles 20:00h Activado</span>
+      <% else horarios_config.mi_20h = false %>
+      <span class="label label-primary">Miercoles 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_2030h? %>
+        <span class="label label-success">Miercoles 20:30h Activado</span>
+      <% else horarios_config.mi_2030h = false %>
+      <span class="label label-primary">Miercoles 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_21h? %>
+        <span class="label label-success">Miercoles 21:00h Activado</span>
+      <% else horarios_config.mi_21h = false %>
+      <span class="label label-primary">Miercoles 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.mi_2130h? %>
+        <span class="label label-success">Miercoles 21:30h Activado</span>
+      <% else horarios_config.mi_2130h = false %>
+      <span class="label label-primary">Miercoles 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_22h? %>
+        <span class="label label-success">Miercoles 22:00h Activado</span>
+      <% else horarios_config.mi_22h = false %>
+      <span class="label label-primary">Miercoles 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_2230h? %>
+        <span class="label label-success">Miercoles 22:30h Activado</span>
+      <% else horarios_config.mi_2230h = false %>
+      <span class="label label-primary">Miercoles 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.mi_23h? %>
+        <span class="label label-success">Miercoles 23:00h Activado</span>
+      <% else horarios_config.mi_23h = false %>
+      <span class="label label-primary">Miercoles 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.mi_2330h? %>
+        <span class="label label-success">Miercoles 23:30h Activado</span>
+      <% else horarios_config.mi_2330h = false %>
+      <span class="label label-primary">Miercoles 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr> 
+
+          <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del miercoles -->  
+
+      </div>
+    </div>
+  </div>
+
+ <!-- aqui termina el acordeon del miercoles --> 
+
+ <!-- aqui termina el acordeon del jueves --> 
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingFor">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+         Horarios Jueves
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
+      <div class="panel-body">
+        
+
+        <!-- aqui comienza el bloque de las horas personalizadas del jueves -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.j_0h? %>
+        <span class="label label-success">Jueves 00:00h Activado</span>
+      <% else horarios_config.j_0h = false %>
+      <span class="label label-primary">Jueves 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.j_1h? %>
+        <span class="label label-success">Jueves 01:00h Activado</span>
+      <% else horarios_config.j_1h = false %>
+      <span class="label label-primary">Jueves 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.j_2h? %>
+        <span class="label label-success">Jueves 02:00h Activado</span>
+      <% else horarios_config.j_2h = false %>
+      <span class="label label-primary">Jueves 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_3h? %>
+        <span class="label label-success">Jueves 03:00h Activado</span>
+      <% else horarios_config.j_3h = false %>
+      <span class="label label-primary">Jueves 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_4h? %>
+        <span class="label label-success">Jueves 04:00h Activado</span>
+      <% else horarios_config.j_4h = false %>
+      <span class="label label-primary">Jueves 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_5h? %>
+        <span class="label label-success">Jueves 05:00h Activado</span>
+      <% else horarios_config.j_5h = false %>
+      <span class="label label-primary">Jueves 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.j_6h? %>
+        <span class="label label-success">Jueves 06:00h Activado</span>
+      <% else horarios_config.j_6h = false %>
+      <span class="label label-primary">Jueves 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.j_7h? %>
+        <span class="label label-success">Jueves 07:00h Activado</span>
+      <% else horarios_config.j_7h = false %>
+      <span class="label label-primary">Jueves 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_730h? %>
+        <span class="label label-success">Jueves 07:30h Activado</span>
+      <% else horarios_config.j_730h = false %>
+      <span class="label label-primary">Jueves 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.j_8h? %>
+        <span class="label label-success">Jueves 08:00h Activado</span>
+      <% else horarios_config.j_8h = false %>
+      <span class="label label-primary">Jueves 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_830h? %>
+        <span class="label label-success">Jueves 08:30h Activado</span>
+      <% else horarios_config.j_830h = false %>
+      <span class="label label-primary">Jueves 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_9h? %>
+        <span class="label label-success">Jueves 09:00h Activado</span>
+      <% else horarios_config.j_9h = false %>
+      <span class="label label-primary">Jueves 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.j_930h? %>
+        <span class="label label-success">Jueves 09:30h Activado</span>
+      <% else horarios_config.j_930h = false %>
+      <span class="label label-primary">Jueves 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_10h? %>
+        <span class="label label-success">Jueves 10:00h Activado</span>
+      <% else horarios_config.j_10h = false %>
+      <span class="label label-primary">Jueves 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.j_1030h? %>
+        <span class="label label-success">Jueves 10:30h Activado</span>
+      <% else horarios_config.j_1030h = false %>
+      <span class="label label-primary">Jueves 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_11h? %>
+        <span class="label label-success">Jueves 11:00h Activado</span>
+      <% else horarios_config.j_11h = false %>
+      <span class="label label-primary">Jueves 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.j_1130h? %>
+        <span class="label label-success">Jueves 11:30h Activado</span>
+      <% else horarios_config.j_1130h = false %>
+      <span class="label label-primary">Jueves 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_12h? %>
+        <span class="label label-success">Jueves 12:00h Activado</span>
+      <% else horarios_config.j_12h = false %>
+      <span class="label label-primary">Jueves 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.j_1230h? %>
+        <span class="label label-success">Jueves 12:30h Activado</span>
+      <% else horarios_config.j_1230h = false %>
+      <span class="label label-primary">Jueves 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_13h? %>
+        <span class="label label-success">Jueves 13:00h Activado</span>
+      <% else horarios_config.j_13h = false %>
+      <span class="label label-primary">Jueves 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_1330h? %>
+        <span class="label label-success">Jueves 13:30h Activado</span>
+      <% else horarios_config.j_1330h = false %>
+      <span class="label label-primary">Jueves 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.j_14h? %>
+        <span class="label label-success">Jueves 14:00h Activado</span>
+      <% else horarios_config.j_14h = false %>
+      <span class="label label-primary">Jueves 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_1430h? %>
+        <span class="label label-success">Jueves 14:30h Activado</span>
+      <% else horarios_config.j_1430h = false %>
+      <span class="label label-primary">Jueves 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.j_15h? %>
+        <span class="label label-success">Jueves 15:00h Activado</span>
+      <% else horarios_config.j_15h = false %>
+      <span class="label label-primary">Jueves 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_1530h? %>
+        <span class="label label-success">Jueves 15:30h Activado</span>
+      <% else horarios_config.j_1530h = false %>
+      <span class="label label-primary">Jueves 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_16h? %>
+        <span class="label label-success">Jueves 16:00h Activado</span>
+      <% else horarios_config.j_16h = false %>
+      <span class="label label-primary">Jueves 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_1630h? %>
+        <span class="label label-success">Jueves 16:30h Activado</span>
+      <% else horarios_config.j_1630h = false %>
+      <span class="label label-primary">Jueves 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.j_17h? %>
+        <span class="label label-success">Jueves 17:00h Activado</span>
+      <% else horarios_config.j_17h = false %>
+      <span class="label label-primary">Jueves 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.j_1730h? %>
+        <span class="label label-success">Jueves 17:30h Activado</span>
+      <% else horarios_config.j_1730h = false %>
+      <span class="label label-primary">Jueves 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.j_18h? %>
+        <span class="label label-success">Jueves 18:00h Activado</span>
+      <% else horarios_config.j_18h = false %>
+      <span class="label label-primary">Jueves 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_1830h? %>
+        <span class="label label-success">Jueves 18:30h Activado</span>
+      <% else horarios_config.j_1830h = false %>
+      <span class="label label-primary">Jueves 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_19h? %>
+        <span class="label label-success">Jueves 19:00h Activado</span>
+      <% else horarios_config.j_19h = false %>
+      <span class="label label-primary">Jueves 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_1930h? %>
+        <span class="label label-success">Jueves 19:30h Activado</span>
+      <% else horarios_config.j_1930h = false %>
+      <span class="label label-primary">Jueves 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_20h? %>
+        <span class="label label-success">Jueves 20:00h Activado</span>
+      <% else horarios_config.j_20h = false %>
+      <span class="label label-primary">Jueves 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_2030h? %>
+        <span class="label label-success">Jueves 20:30h Activado</span>
+      <% else horarios_config.j_2030h = false %>
+      <span class="label label-primary">Jueves 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_21h? %>
+        <span class="label label-success">Jueves 21:00h Activado</span>
+      <% else horarios_config.j_21h = false %>
+      <span class="label label-primary">Jueves 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.j_2130h? %>
+        <span class="label label-success">Jueves 21:30h Activado</span>
+      <% else horarios_config.j_2130h = false %>
+      <span class="label label-primary">Jueves 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_22h? %>
+        <span class="label label-success">Jueves 22:00h Activado</span>
+      <% else horarios_config.j_22h = false %>
+      <span class="label label-primary">Jueves 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_2230h? %>
+        <span class="label label-success">Jueves 22:30h Activado</span>
+      <% else horarios_config.j_2230h = false %>
+      <span class="label label-primary">Jueves 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.j_23h? %>
+        <span class="label label-success">Jueves 23:00h Activado</span>
+      <% else horarios_config.j_23h = false %>
+      <span class="label label-primary">Jueves 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.j_2330h? %>
+        <span class="label label-success">Jueves 23:30h Activado</span>
+      <% else horarios_config.j_2330h = false %>
+      <span class="label label-primary">Jueves 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr> 
+
+          <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del jueves -->  
+      </div>
+    </div>
+  </div>
+
+<!-- aqui termina el acordeon del jueves --> 
+
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+         Horarios Viernes
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        
+<!-- aqui comienza el bloque de las horas personalizadas del viernes -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.v_0h? %>
+        <span class="label label-success">Viernes 00:00h Activado</span>
+      <% else horarios_config.v_0h = false %>
+      <span class="label label-primary">Viernes 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.v_1h? %>
+        <span class="label label-success">Viernes 01:00h Activado</span>
+      <% else horarios_config.v_1h = false %>
+      <span class="label label-primary">Viernes 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.v_2h? %>
+        <span class="label label-success">Viernes 02:00h Activado</span>
+      <% else horarios_config.v_2h = false %>
+      <span class="label label-primary">Viernes 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_3h? %>
+        <span class="label label-success">Viernes 03:00h Activado</span>
+      <% else horarios_config.v_3h = false %>
+      <span class="label label-primary">Viernes 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_4h? %>
+        <span class="label label-success">Viernes 04:00h Activado</span>
+      <% else horarios_config.v_4h = false %>
+      <span class="label label-primary">Viernes 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_5h? %>
+        <span class="label label-success">Viernes 05:00h Activado</span>
+      <% else horarios_config.v_5h = false %>
+      <span class="label label-primary">Viernes 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.v_6h? %>
+        <span class="label label-success">Viernes 06:00h Activado</span>
+      <% else horarios_config.v_6h = false %>
+      <span class="label label-primary">Viernes 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.v_7h? %>
+        <span class="label label-success">Viernes 07:00h Activado</span>
+      <% else horarios_config.v_7h = false %>
+      <span class="label label-primary">Viernes 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_730h? %>
+        <span class="label label-success">Viernes 07:30h Activado</span>
+      <% else horarios_config.v_730h = false %>
+      <span class="label label-primary">Viernes 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.v_8h? %>
+        <span class="label label-success">Viernes 08:00h Activado</span>
+      <% else horarios_config.v_8h = false %>
+      <span class="label label-primary">Viernes 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_830h? %>
+        <span class="label label-success">Viernes 08:30h Activado</span>
+      <% else horarios_config.v_830h = false %>
+      <span class="label label-primary">Viernes 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_9h? %>
+        <span class="label label-success">Viernes 09:00h Activado</span>
+      <% else horarios_config.v_9h = false %>
+      <span class="label label-primary">Viernes 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.v_930h? %>
+        <span class="label label-success">Viernes 09:30h Activado</span>
+      <% else horarios_config.v_930h = false %>
+      <span class="label label-primary">Viernes 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_10h? %>
+        <span class="label label-success">Viernes 10:00h Activado</span>
+      <% else horarios_config.v_10h = false %>
+      <span class="label label-primary">Viernes 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.v_1030h? %>
+        <span class="label label-success">Viernes 10:30h Activado</span>
+      <% else horarios_config.v_1030h = false %>
+      <span class="label label-primary">Viernes 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_11h? %>
+        <span class="label label-success">Viernes 11:00h Activado</span>
+      <% else horarios_config.v_11h = false %>
+      <span class="label label-primary">Viernes 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.v_1130h? %>
+        <span class="label label-success">Viernes 11:30h Activado</span>
+      <% else horarios_config.v_1130h = false %>
+      <span class="label label-primary">Viernes 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_12h? %>
+        <span class="label label-success">Viernes 12:00h Activado</span>
+      <% else horarios_config.j_12h = false %>
+      <span class="label label-primary">Viernes 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.v_1230h? %>
+        <span class="label label-success">Viernes 12:30h Activado</span>
+      <% else horarios_config.v_1230h = false %>
+      <span class="label label-primary">Viernes 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_13h? %>
+        <span class="label label-success">Viernes 13:00h Activado</span>
+      <% else horarios_config.v_13h = false %>
+      <span class="label label-primary">Viernes 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_1330h? %>
+        <span class="label label-success">Viernes 13:30h Activado</span>
+      <% else horarios_config.v_1330h = false %>
+      <span class="label label-primary">Viernes 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.v_14h? %>
+        <span class="label label-success">Viernes 14:00h Activado</span>
+      <% else horarios_config.v_14h = false %>
+      <span class="label label-primary">Viernes 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_1430h? %>
+        <span class="label label-success">Viernes 14:30h Activado</span>
+      <% else horarios_config.v_1430h = false %>
+      <span class="label label-primary">Viernes 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.v_15h? %>
+        <span class="label label-success">Viernes 15:00h Activado</span>
+      <% else horarios_config.v_15h = false %>
+      <span class="label label-primary">Viernes 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_1530h? %>
+        <span class="label label-success">Viernes 15:30h Activado</span>
+      <% else horarios_config.v_1530h = false %>
+      <span class="label label-primary">Viernes 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_16h? %>
+        <span class="label label-success">Viernes 16:00h Activado</span>
+      <% else horarios_config.v_16h = false %>
+      <span class="label label-primary">Viernes 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_1630h? %>
+        <span class="label label-success">Viernes 16:30h Activado</span>
+      <% else horarios_config.v_1630h = false %>
+      <span class="label label-primary">Viernes 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.v_17h? %>
+        <span class="label label-success">Viernes 17:00h Activado</span>
+      <% else horarios_config.v_17h = false %>
+      <span class="label label-primary">Viernes 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.v_1730h? %>
+        <span class="label label-success">Viernes 17:30h Activado</span>
+      <% else horarios_config.v_1730h = false %>
+      <span class="label label-primary">Viernes 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.v_18h? %>
+        <span class="label label-success">Viernes 18:00h Activado</span>
+      <% else horarios_config.v_18h = false %>
+      <span class="label label-primary">Viernes 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_1830h? %>
+        <span class="label label-success">Viernes 18:30h Activado</span>
+      <% else horarios_config.v_1830h = false %>
+      <span class="label label-primary">Viernes 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_19h? %>
+        <span class="label label-success">Viernes 19:00h Activado</span>
+      <% else horarios_config.v_19h = false %>
+      <span class="label label-primary">Viernes 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_1930h? %>
+        <span class="label label-success">Viernes 19:30h Activado</span>
+      <% else horarios_config.v_1930h = false %>
+      <span class="label label-primary">Viernes 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_20h? %>
+        <span class="label label-success">Viernes 20:00h Activado</span>
+      <% else horarios_config.v_20h = false %>
+      <span class="label label-primary">Viernes 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_2030h? %>
+        <span class="label label-success">Viernes 20:30h Activado</span>
+      <% else horarios_config.v_2030h = false %>
+      <span class="label label-primary">Viernes 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_21h? %>
+        <span class="label label-success">Viernes 21:00h Activado</span>
+      <% else horarios_config.v_21h = false %>
+      <span class="label label-primary">Viernes 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.v_2130h? %>
+        <span class="label label-success">Viernes 21:30h Activado</span>
+      <% else horarios_config.v_2130h = false %>
+      <span class="label label-primary">Viernes 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_22h? %>
+        <span class="label label-success">Viernes 22:00h Activado</span>
+      <% else horarios_config.v_22h = false %>
+      <span class="label label-primary">Viernes 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_2230h? %>
+        <span class="label label-success">Viernes 22:30h Activado</span>
+      <% else horarios_config.v_2230h = false %>
+      <span class="label label-primary">Viernes 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.v_23h? %>
+        <span class="label label-success">Viernes 23:00h Activado</span>
+      <% else horarios_config.v_23h = false %>
+      <span class="label label-primary">Viernes 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.v_2330h? %>
+        <span class="label label-success">Viernes 23:30h Activado</span>
+      <% else horarios_config.v_2330h = false %>
+      <span class="label label-primary">Viernes 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr> 
+
+          <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del viernes -->  
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+         Horarios Sabado
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        
+    <!-- aqui comienza el bloque de las horas personalizadas del Sabado -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.s_0h? %>
+        <span class="label label-success">Sabado 00:00h Activado</span>
+      <% else horarios_config.s_0h = false %>
+      <span class="label label-primary">Sabado 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.s_1h? %>
+        <span class="label label-success">Sabado 01:00h Activado</span>
+      <% else horarios_config.s_1h = false %>
+      <span class="label label-primary">Sabado 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.s_2h? %>
+        <span class="label label-success">Sabado 02:00h Activado</span>
+      <% else horarios_config.s_2h = false %>
+      <span class="label label-primary">Sabado 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_3h? %>
+        <span class="label label-success">Sabado 03:00h Activado</span>
+      <% else horarios_config.s_3h = false %>
+      <span class="label label-primary">Sabado 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_4h? %>
+        <span class="label label-success">Sabado 04:00h Activado</span>
+      <% else horarios_config.s_4h = false %>
+      <span class="label label-primary">Sabado 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_5h? %>
+        <span class="label label-success">Sabado 05:00h Activado</span>
+      <% else horarios_config.s_5h = false %>
+      <span class="label label-primary">Sabado 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.s_6h? %>
+        <span class="label label-success">Sabado 06:00h Activado</span>
+      <% else horarios_config.s_6h = false %>
+      <span class="label label-primary">Sabado 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.s_7h? %>
+        <span class="label label-success">Sabado 07:00h Activado</span>
+      <% else horarios_config.s_7h = false %>
+      <span class="label label-primary">Sabado 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_730h? %>
+        <span class="label label-success">Sabado 07:30h Activado</span>
+      <% else horarios_config.s_730h = false %>
+      <span class="label label-primary">Sabado 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.s_8h? %>
+        <span class="label label-success">Sabado 08:00h Activado</span>
+      <% else horarios_config.s_8h = false %>
+      <span class="label label-primary">Sabado 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_830h? %>
+        <span class="label label-success">Sabado 08:30h Activado</span>
+      <% else horarios_config.s_830h = false %>
+      <span class="label label-primary">Sabado 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_9h? %>
+        <span class="label label-success">Sabado 09:00h Activado</span>
+      <% else horarios_config.s_9h = false %>
+      <span class="label label-primary">Sabado 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.s_930h? %>
+        <span class="label label-success">Sabado 09:30h Activado</span>
+      <% else horarios_config.s_930h = false %>
+      <span class="label label-primary">Sabado 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_10h? %>
+        <span class="label label-success">Sabado 10:00h Activado</span>
+      <% else horarios_config.s_10h = false %>
+      <span class="label label-primary">Sabado 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.s_1030h? %>
+        <span class="label label-success">Sabado 10:30h Activado</span>
+      <% else horarios_config.s_1030h = false %>
+      <span class="label label-primary">Sabado 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_11h? %>
+        <span class="label label-success">Sabado 11:00h Activado</span>
+      <% else horarios_config.s_11h = false %>
+      <span class="label label-primary">Sabado 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.s_1130h? %>
+        <span class="label label-success">Sabado 11:30h Activado</span>
+      <% else horarios_config.s_1130h = false %>
+      <span class="label label-primary">Sabado 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_12h? %>
+        <span class="label label-success">Sabado 12:00h Activado</span>
+      <% else horarios_config.s_12h = false %>
+      <span class="label label-primary">Sabado 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.s_1230h? %>
+        <span class="label label-success">Sabado 12:30h Activado</span>
+      <% else horarios_config.s_1230h = false %>
+      <span class="label label-primary">Sabado 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_13h? %>
+        <span class="label label-success">Sabado 13:00h Activado</span>
+      <% else horarios_config.s_13h = false %>
+      <span class="label label-primary">Sabado 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.sabado_1330h? %>
+        <span class="label label-success">Sabado 13:30h Activado</span>
+      <% else horarios_config.sabado_1330h = false %>
+      <span class="label label-primary">Sabado 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.s_14h? %>
+        <span class="label label-success">Sabado 14:00h Activado</span>
+      <% else horarios_config.s_14h = false %>
+      <span class="label label-primary">Sabado 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_1430h? %>
+        <span class="label label-success">Sabado 14:30h Activado</span>
+      <% else horarios_config.s_1430h = false %>
+      <span class="label label-primary">Sabado 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.s_15h? %>
+        <span class="label label-success">Sabado 15:00h Activado</span>
+      <% else horarios_config.s_15h = false %>
+      <span class="label label-primary">Sabado 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_1530h? %>
+        <span class="label label-success">Sabado 15:30h Activado</span>
+      <% else horarios_config.s_1530h = false %>
+      <span class="label label-primary">Sabado 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_16h? %>
+        <span class="label label-success">Sabado 16:00h Activado</span>
+      <% else horarios_config.s_16h = false %>
+      <span class="label label-primary">Sabado 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_1630h? %>
+        <span class="label label-success">Sabado 16:30h Activado</span>
+      <% else horarios_config.s_1630h = false %>
+      <span class="label label-primary">Sabado 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.s_17h? %>
+        <span class="label label-success">Sabado 17:00h Activado</span>
+      <% else horarios_config.s_17h = false %>
+      <span class="label label-primary">Sabado 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.s_1730h? %>
+        <span class="label label-success">Sabado 17:30h Activado</span>
+      <% else horarios_config.s_1730h = false %>
+      <span class="label label-primary">Sabado 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.s_18h? %>
+        <span class="label label-success">Sabado 18:00h Activado</span>
+      <% else horarios_config.s_18h = false %>
+      <span class="label label-primary">Sabado 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_1830h? %>
+        <span class="label label-success">Sabado 18:30h Activado</span>
+      <% else horarios_config.s_1830h = false %>
+      <span class="label label-primary">Sabado 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_19h? %>
+        <span class="label label-success">Sabado 19:00h Activado</span>
+      <% else horarios_config.s_19h = false %>
+      <span class="label label-primary">Sabado 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_1930h? %>
+        <span class="label label-success">Sabado 19:30h Activado</span>
+      <% else horarios_config.s_1930h = false %>
+      <span class="label label-primary">Sabado 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_20h? %>
+        <span class="label label-success">Sabado 20:00h Activado</span>
+      <% else horarios_config.s_20h = false %>
+      <span class="label label-primary">Sabado 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_2030h? %>
+        <span class="label label-success">Sabado 20:30h Activado</span>
+      <% else horarios_config.s_2030h = false %>
+      <span class="label label-primary">Sabado 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_21h? %>
+        <span class="label label-success">Sabado 21:00h Activado</span>
+      <% else horarios_config.s_21h = false %>
+      <span class="label label-primary">Sabado 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.s_2130h? %>
+        <span class="label label-success">Sabado 21:30h Activado</span>
+      <% else horarios_config.s_2130h = false %>
+      <span class="label label-primary">Sabado 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_22h? %>
+        <span class="label label-success">Sabado 22:00h Activado</span>
+      <% else horarios_config.s_22h = false %>
+      <span class="label label-primary">Sabado 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_2230h? %>
+        <span class="label label-success">Sabado 22:30h Activado</span>
+      <% else horarios_config.s_2230h = false %>
+      <span class="label label-primary">Sabado 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.s_23h? %>
+        <span class="label label-success">Sabado 23:00h Activado</span>
+      <% else horarios_config.s_23h = false %>
+      <span class="label label-primary">Sabado 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.s_2330h? %>
+        <span class="label label-success">Sabado 23:30h Activado</span>
+      <% else horarios_config.s_2330h = false %>
+      <span class="label label-primary">Sabado 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr>
+
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr> 
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del sabado -->  
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+         Horarios Domingo
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+        
+
+     <!-- aqui comienza el bloque de las horas personalizadas del domingo -->   
+
+       <div class="container">
+  <h1>Listado Horas personalizadas</h1>
+
+<table>
+  <thead>
+    
+      
+  </thead>
+
+  <tbody>
+    <% @horarios_configs.each do |horarios_config| %>
+      <tr>
+        
+        <td><% if horarios_config.d_0h? %>
+        <span class="label label-success">Domingo 00:00h Activado</span>
+      <% else horarios_config.d_0h = false %>
+      <span class="label label-primary">Domingo 00:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.d_1h? %>
+        <span class="label label-success">Domingo 01:00h Activado</span>
+      <% else horarios_config.d_1h = false %>
+      <span class="label label-primary">Domingo 01:00h Desactivado</span>
+      <% end %></td>
+        
+        <td><% if horarios_config.d_2h? %>
+        <span class="label label-success">Domingo 02:00h Activado</span>
+      <% else horarios_config.d_2h = false %>
+      <span class="label label-primary">Domingo 02:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_3h? %>
+        <span class="label label-success">Domingo 03:00h Activado</span>
+      <% else horarios_config.d_3h = false %>
+      <span class="label label-primary">Domingo 03:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_4h? %>
+        <span class="label label-success">Domingo 04:00h Activado</span>
+      <% else horarios_config.d_4h = false %>
+      <span class="label label-primary">Domingo 04:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_5h? %>
+        <span class="label label-success">Domingo 05:00h Activado</span>
+      <% else horarios_config.d_5h = false %>
+      <span class="label label-primary">Domingo 05:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.d_6h? %>
+        <span class="label label-success">Domingo 06:00h Activado</span>
+      <% else horarios_config.d_6h = false %>
+      <span class="label label-primary">Domingo 06:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.d_7h? %>
+        <span class="label label-success">Domingo 07:00h Activado</span>
+      <% else horarios_config.d_7h = false %>
+      <span class="label label-primary">Domingo 07:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_730h? %>
+        <span class="label label-success">Domingo 07:30h Activado</span>
+      <% else horarios_config.d_730h = false %>
+      <span class="label label-primary">Domingo 07:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.d_8h? %>
+        <span class="label label-success">Domingo 08:00h Activado</span>
+      <% else horarios_config.d_8h = false %>
+      <span class="label label-primary">Domingo 08:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_830h? %>
+        <span class="label label-success">Domingo 08:30h Activado</span>
+      <% else horarios_config.d_830h = false %>
+      <span class="label label-primary">Domingo 08:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_9h? %>
+        <span class="label label-success">Domingo 09:00h Activado</span>
+      <% else horarios_config.d_9h = false %>
+      <span class="label label-primary">Domingo 09:00h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.d_930h? %>
+        <span class="label label-success">Domingo 09:30h Activado</span>
+      <% else horarios_config.d_930h = false %>
+      <span class="label label-primary">Domingo 09:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_10h? %>
+        <span class="label label-success">Domingo 10:00h Activado</span>
+      <% else horarios_config.d_10h = false %>
+      <span class="label label-primary">Domingo 10:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.d_1030h? %>
+        <span class="label label-success">Domingo 10:30h Activado</span>
+      <% else horarios_config.d_1030h = false %>
+      <span class="label label-primary">Domingo 10:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_11h? %>
+        <span class="label label-success">Domingo 11:00h Activado</span>
+      <% else horarios_config.d_11h = false %>
+      <span class="label label-primary">Domingo 11:00h Desactivado</span>
+      <% end %></td>  
+      
+        <td><% if horarios_config.d_1130h? %>
+        <span class="label label-success">Domingo 11:30h Activado</span>
+      <% else horarios_config.d_1130h = false %>
+      <span class="label label-primary">Domingo 11:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_12h? %>
+        <span class="label label-success">Domingo 12:00h Activado</span>
+      <% else horarios_config.d_12h = false %>
+      <span class="label label-primary">Domingo 12:00h Desactivado</span>
+      <% end %></td>
+
+      
+     
+      
+        <td><% if horarios_config.d_1230h? %>
+        <span class="label label-success">Domingo 12:30h Activado</span>
+      <% else horarios_config.d_1230h = false %>
+      <span class="label label-primary">Domingo 12:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_13h? %>
+        <span class="label label-success">Domingo 13:00h Activado</span>
+      <% else horarios_config.d_13h = false %>
+      <span class="label label-primary">Domingo 13:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_1330h? %>
+        <span class="label label-success">Domingo 13:30h Activado</span>
+      <% else horarios_config.j_1330h = false %>
+      <span class="label label-primary">Domingo 13:30h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.d_14h? %>
+        <span class="label label-success">Domingo 14:00h Activado</span>
+      <% else horarios_config.d_14h = false %>
+      <span class="label label-primary">Domingo 14:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_1430h? %>
+        <span class="label label-success">Domingo 14:30h Activado</span>
+      <% else horarios_config.d_1430h = false %>
+      <span class="label label-primary">Domingo 14:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.d_15h? %>
+        <span class="label label-success">Domingo 15:00h Activado</span>
+      <% else horarios_config.d_15h = false %>
+      <span class="label label-primary">Domingo 15:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_1530h? %>
+        <span class="label label-success">Domingo 15:30h Activado</span>
+      <% else horarios_config.d_1530h = false %>
+      <span class="label label-primary">Domingo 15:30h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_16h? %>
+        <span class="label label-success">Domingo 16:00h Activado</span>
+      <% else horarios_config.d_16h = false %>
+      <span class="label label-primary">Domingo 16:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_1630h? %>
+        <span class="label label-success">Domingo 16:30h Activado</span>
+      <% else horarios_config.d_1630h = false %>
+      <span class="label label-primary">Domingo 16:30h Desactivado</span>
+      <% end %></td>
+      
+      
+      <td><% if horarios_config.d_17h? %>
+        <span class="label label-success">Domingo 17:00h Activado</span>
+      <% else horarios_config.d_17h = false %>
+      <span class="label label-primary">Domingo 17:00h Desactivado</span>
+      <% end %></td>
+      
+      
+        <td><% if horarios_config.d_1730h? %>
+        <span class="label label-success">Domingo 17:30h Activado</span>
+      <% else horarios_config.d_1730h = false %>
+      <span class="label label-primary">Domingo 17:30h Desactivado</span>
+      <% end %></td>
+
+      
+      
+        <td><% if horarios_config.d_18h? %>
+        <span class="label label-success">Domingo 18:00h Activado</span>
+      <% else horarios_config.d_18h = false %>
+      <span class="label label-primary">Domingo 18:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_1830h? %>
+        <span class="label label-success">Domingo 18:30h Activado</span>
+      <% else horarios_config.d_1830h = false %>
+      <span class="label label-primary">Domingo 18:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_19h? %>
+        <span class="label label-success">Domingo 19:00h Activado</span>
+      <% else horarios_config.d_19h = false %>
+      <span class="label label-primary">Domingo 19:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_1930h? %>
+        <span class="label label-success">Domingo 19:30h Activado</span>
+      <% else horarios_config.d_1930h = false %>
+      <span class="label label-primary">Domingo 19:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_20h? %>
+        <span class="label label-success">Domingo 20:00h Activado</span>
+      <% else horarios_config.d_20h = false %>
+      <span class="label label-primary">Domingo 20:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_2030h? %>
+        <span class="label label-success">Domingo 20:30h Activado</span>
+      <% else horarios_config.d_2030h = false %>
+      <span class="label label-primary">Domingo 20:30h Desactivado</span>
+      <% end %></td>
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_21h? %>
+        <span class="label label-success">Domingo 21:00h Activado</span>
+      <% else horarios_config.d_21h = false %>
+      <span class="label label-primary">Domingo 21:00h Desactivado</span>
+      <% end %></td>
+     
+
+      
+        <td><% if horarios_config.d_2130h? %>
+        <span class="label label-success">Domingo 21:30h Activado</span>
+      <% else horarios_config.d_2130h = false %>
+      <span class="label label-primary">Domingo 21:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_22h? %>
+        <span class="label label-success">Domingo 22:00h Activado</span>
+      <% else horarios_config.d_22h = false %>
+      <span class="label label-primary">Domingo 22:00h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_2230h? %>
+        <span class="label label-success">Domingo 22:30h Activado</span>
+      <% else horarios_config.d_2230h = false %>
+      <span class="label label-primary">Domingo 22:30h Desactivado</span>
+      <% end %></td>
+      
+        <td><% if horarios_config.d_23h? %>
+        <span class="label label-success">Domingo 23:00h Activado</span>
+      <% else horarios_config.d_23h = false %>
+      <span class="label label-primary">Domingo 23:00h Desactivado</span>
+      <% end %></td>
+
+      </tr>
+        <tr>
+      
+        <td><% if horarios_config.d_2330h? %>
+        <span class="label label-success">Domingo 23:30h Activado</span>
+      <% else horarios_config.d_2330h = false %>
+      <span class="label label-primary">Domingo 23:30h Desactivado</span>
+      <% end %></td>
+        
+        <tr> 
+
+          <tr>
+        <th><h1></h1></th>
+        </tr>
+        <tr>
+        <th><h1></h1></th>
+        </tr>
+
+        
+         <td>
+        <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Editar', edit_horarios_config_path(horarios_config) %></button></td>
+        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>
+
+<!-- aqui termina el bloque del domingo -->  
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+

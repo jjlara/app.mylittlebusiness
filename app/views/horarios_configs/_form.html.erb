@@ -1,0 +1,480 @@
+<div class="container">
+<%= form_for(@horarios_config) do |f| %>
+  <% if @horarios_config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@horarios_config.errors.count, "error") %> prohibited this horarios_config from being saved:</h2>
+
+      <ul>
+      <% @horarios_config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Lunes</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Lunes 00:00h <%= f.check_box :l_0h %></button>
+       <button type="button" class="btn btn-primary">Lunes 01:00h <%= f.check_box :l_1h %></button>
+       <button type="button" class="btn btn-primary">Lunes 02:00h <%= f.check_box :l_2h %></button>
+       <button type="button" class="btn btn-primary">Lunes 03:00h <%= f.check_box :l_3h %></button>
+       <button type="button" class="btn btn-primary">Lunes 04:00h <%= f.check_box :l_4h %></button>
+       <button type="button" class="btn btn-primary">Lunes 05:00h <%= f.check_box :l_5h %></button>
+       <button type="button" class="btn btn-primary">Lunes 06:00h <%= f.check_box :l_6h %></button>
+       <button type="button" class="btn btn-primary">Lunes 07:00h <%= f.check_box :l_7h %></button>
+       <button type="button" class="btn btn-primary">Lunes 07:30h <%= f.check_box :l_730h %></button>
+       <button type="button" class="btn btn-primary">Lunes 08:00h <%= f.check_box :l_8h %></button>
+       <button type="button" class="btn btn-primary">Lunes 08:30h <%= f.check_box :l_830h %></button>
+       <button type="button" class="btn btn-primary">Lunes 09:00h <%= f.check_box :l_9h %></button>
+       <button type="button" class="btn btn-primary">Lunes 09:30h <%= f.check_box :lun_930h %></button>
+       <button type="button" class="btn btn-primary">Lunes 10:00h <%= f.check_box :l_10h %></button>
+       <button type="button" class="btn btn-primary">Lunes 10:30h <%= f.check_box :l_1030h %></button>
+       <button type="button" class="btn btn-primary">Lunes 11:00h <%= f.check_box :l_11h %></button>
+       <button type="button" class="btn btn-primary">Lunes 11:30h <%= f.check_box :l_1130 %></button>
+       <button type="button" class="btn btn-primary">Lunes 12:00h <%= f.check_box :l_12h %></button>
+       <button type="button" class="btn btn-primary">Lunes 12:30h <%= f.check_box :l_1230h %></button>
+       <button type="button" class="btn btn-primary">Lunes 13:00h <%= f.check_box :l_13h %></button>
+       <button type="button" class="btn btn-primary">Lunes 13:30h <%= f.check_box :l_1330h %></button>
+       <button type="button" class="btn btn-primary">Lunes 14:00h <%= f.check_box :l_14h %></button>
+       <button type="button" class="btn btn-primary">Lunes 14:30h <%= f.check_box :l_1430h %></button>
+       <button type="button" class="btn btn-primary">Lunes 15:00h <%= f.check_box :l_15h %></button>
+       <button type="button" class="btn btn-primary">Lunes 15:30h <%= f.check_box :l_1530h %></button>
+       <button type="button" class="btn btn-primary">Lunes 16:00h <%= f.check_box :l_16h %></button>
+       <button type="button" class="btn btn-primary">Lunes 16:30h <%= f.check_box :l_1630h %></button>
+       <button type="button" class="btn btn-primary">Lunes 17:00h <%= f.check_box :l_17h %></button>
+       <button type="button" class="btn btn-primary">Lunes 17:30h <%= f.check_box :l_1730h %></button>
+       <button type="button" class="btn btn-primary">Lunes 18:00h <%= f.check_box :l_18h %></button>
+       <button type="button" class="btn btn-primary">Lunes 18:30h <%= f.check_box :l_1830h %></button>
+       <button type="button" class="btn btn-primary">Lunes 19:00h <%= f.check_box :l_19h %></button>
+       <button type="button" class="btn btn-primary">Lunes 19:30h <%= f.check_box :l_1930h %></button>
+       <button type="button" class="btn btn-primary">Lunes 20:00h <%= f.check_box :l_20h %></button>
+       <button type="button" class="btn btn-primary">Lunes 20:30h <%= f.check_box :l_2030h %></button>
+       <button type="button" class="btn btn-primary">Lunes 21:00h <%= f.check_box :l_21h %></button>
+       <button type="button" class="btn btn-primary">Lunes 21:30h <%= f.check_box :l_2130h %></button>
+       <button type="button" class="btn btn-primary">Lunes 22:00h <%= f.check_box :l_22h %></button>
+       <button type="button" class="btn btn-primary">Lunes 22:30h <%= f.check_box :l_2230h %></button>
+       <button type="button" class="btn btn-primary">Lunes 23:00h <%= f.check_box :l_23h %></button>
+       <button type="button" class="btn btn-primary">Lunes 23:30h <%= f.check_box :l_2330h %></button>
+       <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Martes</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Martes 00:00h <%= f.check_box :ma_0h %></button>
+       <button type="button" class="btn btn-primary">Martes 01:00h <%= f.check_box :ma_1h %></button>
+       <button type="button" class="btn btn-primary">Martes 02:00h <%= f.check_box :ma_2h %></button>
+       <button type="button" class="btn btn-primary">Martes 03:00h <%= f.check_box :ma_3h %></button>
+       <button type="button" class="btn btn-primary">Martes 04:00h <%= f.check_box :ma_4h %></button>
+       <button type="button" class="btn btn-primary">Martes 05:00h <%= f.check_box :ma_5h %></button>
+       <button type="button" class="btn btn-primary">Martes 06:00h <%= f.check_box :ma_6h %></button>
+       <button type="button" class="btn btn-primary">Martes 07:00h <%= f.check_box :ma_7h %></button>
+       <button type="button" class="btn btn-primary">Martes 07:30h <%= f.check_box :ma_730h %></button>
+       <button type="button" class="btn btn-primary">Martes 08:00h <%= f.check_box :ma_8h %></button>
+       <button type="button" class="btn btn-primary">Martes 08:30h <%= f.check_box :ma_830h %></button>
+       <button type="button" class="btn btn-primary">Martes 09:00h <%= f.check_box :ma_9h %></button>
+       <button type="button" class="btn btn-primary">Martes 09:30h <%= f.check_box :ma_930h %></button>
+       <button type="button" class="btn btn-primary">Martes 10:00h <%= f.check_box :ma_10h %></button>
+       <button type="button" class="btn btn-primary">Martes 10:30h <%= f.check_box :ma_1030h %></button>
+       <button type="button" class="btn btn-primary">Martes 11:00h <%= f.check_box :ma_11h %></button>
+       <button type="button" class="btn btn-primary">Martes 11:30h <%= f.check_box :martes_1130h %></button>
+       <button type="button" class="btn btn-primary">Martes 12:00h <%= f.check_box :ma_12h %></button>
+       <button type="button" class="btn btn-primary">Martes 12:30h <%= f.check_box :ma_1230h %></button>
+       <button type="button" class="btn btn-primary">Martes 13:00h <%= f.check_box :ma_13h %></button>
+       <button type="button" class="btn btn-primary">Martes 13:30h <%= f.check_box :ma_1330h %></button>
+       <button type="button" class="btn btn-primary">Martes 14:00h <%= f.check_box :ma_14h %></button>
+       <button type="button" class="btn btn-primary">Martes 14:30h <%= f.check_box :ma_1430h %></button>
+       <button type="button" class="btn btn-primary">Martes 15:00h <%= f.check_box :ma_15h %></button>
+       <button type="button" class="btn btn-primary">Martes 15:30h <%= f.check_box :ma_1530h %></button>
+       <button type="button" class="btn btn-primary">Martes 16:00h <%= f.check_box :ma_16h %></button>
+       <button type="button" class="btn btn-primary">Martes 16:30h <%= f.check_box :ma_1630h %></button>
+       <button type="button" class="btn btn-primary">Martes 17:00h <%= f.check_box :ma_17h %></button>
+       <button type="button" class="btn btn-primary">Martes 17:30h <%= f.check_box :ma_1730h %></button>
+       <button type="button" class="btn btn-primary">Martes 18:00h <%= f.check_box :ma_18h %></button>
+       <button type="button" class="btn btn-primary">Martes 18:30h <%= f.check_box :ma_1830h %></button>
+       <button type="button" class="btn btn-primary">Martes 19:00h <%= f.check_box :ma_19h %></button>
+       <button type="button" class="btn btn-primary">Martes 19:30h <%= f.check_box :ma_1930h %></button>
+       <button type="button" class="btn btn-primary">Martes 20:00h <%= f.check_box :ma_20h %></button>
+       <button type="button" class="btn btn-primary">Martes 20:30h <%= f.check_box :ma_2030h %></button>
+       <button type="button" class="btn btn-primary">Martes 21:00h <%= f.check_box :ma_21h %></button>
+       <button type="button" class="btn btn-primary">Martes 21:30h <%= f.check_box :ma_2130h %></button>
+       <button type="button" class="btn btn-primary">Martes 22:00h <%= f.check_box :ma_22h %></button>
+       <button type="button" class="btn btn-primary">Martes 22:30h <%= f.check_box :ma_2230h %></button>
+       <button type="button" class="btn btn-primary">Martes 23:00h <%= f.check_box :ma_23h %></button>
+       <button type="button" class="btn btn-primary">Martes 23:30h <%= f.check_box :ma_2330h %></button>
+       <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Miercoles</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Miercoles 00:00h <%= f.check_box :mi_0h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 01:00h <%= f.check_box :mi_1h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 02:00h <%= f.check_box :mi_2h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 03:00h <%= f.check_box :mi_3h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 04:00h <%= f.check_box :mi_4h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 05:00h <%= f.check_box :mi_5h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 06:00h <%= f.check_box :mi_6h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 07:00h <%= f.check_box :mi_7h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 07:30h <%= f.check_box :mi_730h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 08:00h <%= f.check_box :mi_8h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 08:30h <%= f.check_box :mi_830h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 09:00h <%= f.check_box :mi_9h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 09:30h <%= f.check_box :mi_930h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 10:00h <%= f.check_box :miercoles_10h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 10:30h <%= f.check_box :mi_1030h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 11:00h <%= f.check_box :mi_11h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 11:30h <%= f.check_box :mi_1130h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 12:00h <%= f.check_box :mi_12h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 12:30h <%= f.check_box :mi_1230h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 13:00h <%= f.check_box :mi_13h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 13:30h <%= f.check_box :mi_1330h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 14:00h <%= f.check_box :mi_14h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 14:30h <%= f.check_box :mi_1430h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 15:00h <%= f.check_box :mi_15h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 15:30h <%= f.check_box :mi_1530h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 16:00h <%= f.check_box :mi_16h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 16:30h <%= f.check_box :mi_1630h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 17:00h <%= f.check_box :mi_17h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 17:30h <%= f.check_box :mi_1730h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 18:00h <%= f.check_box :mi_18h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 18:30h <%= f.check_box :mi_1830h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 19:00h <%= f.check_box :mi_19h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 19:30h <%= f.check_box :mi_1930h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 20:00h <%= f.check_box :mi_20h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 20:30h <%= f.check_box :mi_2030h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 21:00h <%= f.check_box :mi_21h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 21:30h <%= f.check_box :mi_2130h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 22:00h <%= f.check_box :mi_22h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 22:30h <%= f.check_box :mi_2230h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 23:00h <%= f.check_box :mi_23h %></button>
+       <button type="button" class="btn btn-primary">Miercoles 23:30h <%= f.check_box :mi_2330h %></button>
+       <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Jueves</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Jueves 00:00h <%= f.check_box :j_0h %></button>
+       <button type="button" class="btn btn-primary">Jueves 01:00h <%= f.check_box :j_1h %></button>
+       <button type="button" class="btn btn-primary">Jueves 02:00h <%= f.check_box :j_2h %></button>
+       <button type="button" class="btn btn-primary">Jueves 03:00h <%= f.check_box :j_3h %></button>
+       <button type="button" class="btn btn-primary">Jueves 04:00h <%= f.check_box :j_4h %></button>
+       <button type="button" class="btn btn-primary">Jueves 05:00h <%= f.check_box :j_5h %></button>
+       <button type="button" class="btn btn-primary">Jueves 06:00h <%= f.check_box :j_6h %></button>
+       <button type="button" class="btn btn-primary">Jueves 07:00h <%= f.check_box :j_7h %></button>
+       <button type="button" class="btn btn-primary">Jueves 07:30h <%= f.check_box :j_730h %></button>
+       <button type="button" class="btn btn-primary">Jueves 08:00h <%= f.check_box :j_8h %></button>
+       <button type="button" class="btn btn-primary">Jueves 08:30h <%= f.check_box :j_830h %></button>
+       <button type="button" class="btn btn-primary">Jueves 09:00h <%= f.check_box :j_9h %></button>
+       <button type="button" class="btn btn-primary">Jueves 09:30h <%= f.check_box :j_930h %></button>
+       <button type="button" class="btn btn-primary">Jueves 10:00h <%= f.check_box :j_10h %></button>
+       <button type="button" class="btn btn-primary">Jueves 10:30h <%= f.check_box :j_1030h %></button>
+       <button type="button" class="btn btn-primary">Jueves 11:00h <%= f.check_box :j_11h %></button>
+       <button type="button" class="btn btn-primary">Jueves 11:30h <%= f.check_box :j_1130h %></button>
+       <button type="button" class="btn btn-primary">Jueves 12:00h <%= f.check_box :j_12h %></button>
+       <button type="button" class="btn btn-primary">Jueves 12:30h <%= f.check_box :j_1230h %></button>
+       <button type="button" class="btn btn-primary">Jueves 13:00h <%= f.check_box :j_13h %></button>
+       <button type="button" class="btn btn-primary">Jueves 13:30h <%= f.check_box :j_1330h %></button>
+       <button type="button" class="btn btn-primary">Jueves 14:00h <%= f.check_box :j_14h %></button>
+       <button type="button" class="btn btn-primary">Jueves 14:30h <%= f.check_box :j_1430h %></button>
+       <button type="button" class="btn btn-primary">Jueves 15:00h <%= f.check_box :j_15h %></button>
+       <button type="button" class="btn btn-primary">Jueves 15:30h <%= f.check_box :j_1530h %></button>
+       <button type="button" class="btn btn-primary">Jueves 16:00h <%= f.check_box :j_16h %></button>
+       <button type="button" class="btn btn-primary">Jueves 16:30h <%= f.check_box :j_1630h %></button>
+       <button type="button" class="btn btn-primary">Jueves 17:00h <%= f.check_box :j_17h %></button>
+       <button type="button" class="btn btn-primary">Jueves 17:30h <%= f.check_box :j_1730h %></button>
+       <button type="button" class="btn btn-primary">Jueves 18:00h <%= f.check_box :j_18h %></button>
+       <button type="button" class="btn btn-primary">Jueves 18:30h <%= f.check_box :j_1830h %></button>
+       <button type="button" class="btn btn-primary">Jueves 19:00h <%= f.check_box :j_19h %></button>
+       <button type="button" class="btn btn-primary">Jueves 19:30h <%= f.check_box :j_1930h %></button>
+       <button type="button" class="btn btn-primary">Jueves 20:00h <%= f.check_box :j_20h %></button>
+       <button type="button" class="btn btn-primary">Jueves 20:30h <%= f.check_box :j_2030h %></button>
+       <button type="button" class="btn btn-primary">Jueves 21:00h <%= f.check_box :j_21h %></button>
+       <button type="button" class="btn btn-primary">Jueves 21:30h <%= f.check_box :j_2130h %></button>
+       <button type="button" class="btn btn-primary">Jueves 22:00h <%= f.check_box :j_22h %></button>
+       <button type="button" class="btn btn-primary">Jueves 22:30h <%= f.check_box :j_2230h %></button>
+       <button type="button" class="btn btn-primary">Jueves 23:00h <%= f.check_box :j_23h %></button>
+       <button type="button" class="btn btn-primary">Jueves 23:30h <%= f.check_box :j_2330h %></button>
+      <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Viernes</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Viernes 00:00h <%= f.check_box :v_0h %></button>
+       <button type="button" class="btn btn-primary">Viernes 01:00h <%= f.check_box :v_1h %></button>
+       <button type="button" class="btn btn-primary">Viernes 02:00h <%= f.check_box :v_2h %></button>
+       <button type="button" class="btn btn-primary">Viernes 03:00h <%= f.check_box :v_3h %></button>
+       <button type="button" class="btn btn-primary">Viernes 04:00h <%= f.check_box :v_4h %></button>
+       <button type="button" class="btn btn-primary">Viernes 05:00h <%= f.check_box :v_5h %></button>
+       <button type="button" class="btn btn-primary">Viernes 06:00h <%= f.check_box :v_6h %></button>
+       <button type="button" class="btn btn-primary">Viernes 07:00h <%= f.check_box :v_7h %></button>
+       <button type="button" class="btn btn-primary">Viernes 07:30h <%= f.check_box :v_730h %></button>
+       <button type="button" class="btn btn-primary">Viernes 08:00h <%= f.check_box :v_8h %></button>
+       <button type="button" class="btn btn-primary">Viernes 08:30h <%= f.check_box :v_830h %></button>
+       <button type="button" class="btn btn-primary">Viernes 09:00h <%= f.check_box :v_9h %></button>
+       <button type="button" class="btn btn-primary">Viernes 09:30h <%= f.check_box :v_930h %></button>
+       <button type="button" class="btn btn-primary">Viernes 10:00h <%= f.check_box :v_10h %></button>
+       <button type="button" class="btn btn-primary">Viernes 10:30h <%= f.check_box :v_1030h %></button>
+       <button type="button" class="btn btn-primary">Viernes 11:00h <%= f.check_box :v_11h %></button>
+       <button type="button" class="btn btn-primary">Viernes 11:30h <%= f.check_box :v_1130h %></button>
+       <button type="button" class="btn btn-primary">Viernes 12:00h <%= f.check_box :v_12h %></button>
+       <button type="button" class="btn btn-primary">Viernes 12:30h <%= f.check_box :v_1230h %></button>
+       <button type="button" class="btn btn-primary">Viernes 13:00h <%= f.check_box :v_13h %></button>
+       <button type="button" class="btn btn-primary">Viernes 13:30h <%= f.check_box :v_1330h %></button>
+       <button type="button" class="btn btn-primary">Viernes 14:00h <%= f.check_box :v_14h %></button>
+       <button type="button" class="btn btn-primary">Viernes 14:30h <%= f.check_box :v_1430h %></button>
+       <button type="button" class="btn btn-primary">Viernes 15:00h <%= f.check_box :v_15h %></button>
+       <button type="button" class="btn btn-primary">Viernes 15:30h <%= f.check_box :v_1530h %></button>
+       <button type="button" class="btn btn-primary">Viernes 16:00h <%= f.check_box :v_16h %></button>
+       <button type="button" class="btn btn-primary">Viernes 16:30h <%= f.check_box :v_1630h %></button>
+       <button type="button" class="btn btn-primary">Viernes 17:00h <%= f.check_box :v_17h %></button>
+       <button type="button" class="btn btn-primary">Viernes 17:30h <%= f.check_box :v_1730h %></button>
+       <button type="button" class="btn btn-primary">Viernes 18:00h <%= f.check_box :v_18h %></button>
+       <button type="button" class="btn btn-primary">Viernes 18:30h <%= f.check_box :v_1830h %></button>
+       <button type="button" class="btn btn-primary">Viernes 19:00h <%= f.check_box :v_19h %></button>
+       <button type="button" class="btn btn-primary">Viernes 19:30h <%= f.check_box :v_1930h %></button>
+       <button type="button" class="btn btn-primary">Viernes 20:00h <%= f.check_box :v_20h %></button>
+       <button type="button" class="btn btn-primary">Viernes 20:30h <%= f.check_box :v_2030h %></button>
+       <button type="button" class="btn btn-primary">Viernes 21:00h <%= f.check_box :v_21h %></button>
+       <button type="button" class="btn btn-primary">Viernes 21:30h <%= f.check_box :v_2130h %></button>
+       <button type="button" class="btn btn-primary">Viernes 22:00h <%= f.check_box :v_22h %></button>
+       <button type="button" class="btn btn-primary">Viernes 22:30h <%= f.check_box :v_2230h %></button>
+       <button type="button" class="btn btn-primary">Viernes 23:00h <%= f.check_box :v_23h %></button>
+       <button type="button" class="btn btn-primary">Viernes 23:30h <%= f.check_box :v_2330h %></button>
+       <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Sabado</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Sabado 00:00h <%= f.check_box :s_0h %></button>
+       <button type="button" class="btn btn-primary">Sabado 01:00h <%= f.check_box :s_1h %></button>
+       <button type="button" class="btn btn-primary">Sabado 02:00h <%= f.check_box :s_2h %></button>
+       <button type="button" class="btn btn-primary">Sabado 03:00h <%= f.check_box :s_3h %></button>
+       <button type="button" class="btn btn-primary">Sabado 04:00h <%= f.check_box :s_4h %></button>
+       <button type="button" class="btn btn-primary">Sabado 05:00h <%= f.check_box :s_5h %></button>
+       <button type="button" class="btn btn-primary">Sabado 06:00h <%= f.check_box :s_6h %></button>
+       <button type="button" class="btn btn-primary">Sabado 07:00h <%= f.check_box :s_7h %></button>
+       <button type="button" class="btn btn-primary">Sabado 07:30h <%= f.check_box :s_730h %></button>
+       <button type="button" class="btn btn-primary">Sabado 08:00h <%= f.check_box :s_8h %></button>
+       <button type="button" class="btn btn-primary">Sabado 08:30h <%= f.check_box :s_830h %></button>
+       <button type="button" class="btn btn-primary">Sabado 09:00h <%= f.check_box :s_9h %></button>
+       <button type="button" class="btn btn-primary">Sabado 09:30h <%= f.check_box :s_930h %></button>
+       <button type="button" class="btn btn-primary">Sabado 10:00h <%= f.check_box :s_10h %></button>
+       <button type="button" class="btn btn-primary">Sabado 10:30h <%= f.check_box :s_1030h %></button>
+       <button type="button" class="btn btn-primary">Sabado 11:00h <%= f.check_box :s_11h %></button>
+       <button type="button" class="btn btn-primary">Sabado 11:30h <%= f.check_box :s_1130h %></button>
+       <button type="button" class="btn btn-primary">Sabado 12:00h <%= f.check_box :s_12h %></button>
+       <button type="button" class="btn btn-primary">Sabado 12:30h <%= f.check_box :s_1230h %></button>
+       <button type="button" class="btn btn-primary">Sabado 13:00h <%= f.check_box :s_13h %></button>
+       <button type="button" class="btn btn-primary">Sabado 13:30h <%= f.check_box :sabado_1330h %></button>
+       <button type="button" class="btn btn-primary">Sabado 14:00h <%= f.check_box :s_14h %></button>
+       <button type="button" class="btn btn-primary">Sabado 14:30h <%= f.check_box :s_1430h %></button>
+       <button type="button" class="btn btn-primary">Sabado 15:00h <%= f.check_box :s_15h %></button>
+       <button type="button" class="btn btn-primary">Sabado 15:30h <%= f.check_box :s_1530h %></button>
+       <button type="button" class="btn btn-primary">Sabado 16:00h <%= f.check_box :s_16h %></button>
+       <button type="button" class="btn btn-primary">Sabado 16:30h <%= f.check_box :s_1630h %></button>
+       <button type="button" class="btn btn-primary">Sabado 17:00h <%= f.check_box :s_17h %></button>
+       <button type="button" class="btn btn-primary">Sabado 17:30h <%= f.check_box :s_1730h %></button>
+       <button type="button" class="btn btn-primary">Sabado 18:00h <%= f.check_box :s_18h %></button>
+       <button type="button" class="btn btn-primary">Sabado 18:30h <%= f.check_box :s_1830h %></button>
+       <button type="button" class="btn btn-primary">Sabado 19:00h <%= f.check_box :s_19h %></button>
+       <button type="button" class="btn btn-primary">Sabado 19:30h <%= f.check_box :s_1930h %></button>
+       <button type="button" class="btn btn-primary">Sabado 20:00h <%= f.check_box :s_20h %></button>
+       <button type="button" class="btn btn-primary">Sabado 20:30h <%= f.check_box :s_2030h %></button>
+       <button type="button" class="btn btn-primary">Sabado 21:00h <%= f.check_box :s_21h %></button>
+       <button type="button" class="btn btn-primary">Sabado 21:30h <%= f.check_box :s_2130h %></button>
+       <button type="button" class="btn btn-primary">Sabado 22:00h <%= f.check_box :s_22h %></button>
+       <button type="button" class="btn btn-primary">Sabado 22:30h <%= f.check_box :s_2230h %></button>
+       <button type="button" class="btn btn-primary">Sabado 23:00h <%= f.check_box :s_23h %></button>
+       <button type="button" class="btn btn-primary">Sabado 23:30h <%= f.check_box :s_2330h %></button>
+       <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-sm-6 col-md-12">
+    <div class="thumbnail">
+      <%= link_to image_tag("10.png", :size=>"800x800") %>
+      <div class="caption">
+        <h3>Domingo</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+           <div class="field">
+       <button type="button" class="btn btn-primary">Domingo 00:00h <%= f.check_box :d_0h %></button>
+       <button type="button" class="btn btn-primary">Domingo 01:00h <%= f.check_box :d_1h %></button>
+       <button type="button" class="btn btn-primary">Domingo 02:00h <%= f.check_box :d_2h %></button>
+       <button type="button" class="btn btn-primary">Domingo 03:00h <%= f.check_box :d_3h %></button>
+       <button type="button" class="btn btn-primary">Domingo 04:00h <%= f.check_box :d_4h %></button>
+       <button type="button" class="btn btn-primary">Domingo 05:00h <%= f.check_box :d_5h %></button>
+       <button type="button" class="btn btn-primary">Domingo 06:00h <%= f.check_box :d_6h %></button>
+       <button type="button" class="btn btn-primary">Domingo 07:00h <%= f.check_box :d_7h %></button>
+       <button type="button" class="btn btn-primary">Domingo 07:30h <%= f.check_box :d_730h %></button>
+       <button type="button" class="btn btn-primary">Domingo 08:00h <%= f.check_box :d_8h %></button>
+       <button type="button" class="btn btn-primary">Domingo 08:30h <%= f.check_box :d_830h %></button>
+       <button type="button" class="btn btn-primary">Domingo 09:00h <%= f.check_box :d_9h %></button>
+       <button type="button" class="btn btn-primary">Domingo 09:30h <%= f.check_box :d_930h %></button>
+       <button type="button" class="btn btn-primary">Domingo 10:00h <%= f.check_box :d_10h %></button>
+       <button type="button" class="btn btn-primary">Domingo 10:30h <%= f.check_box :d_1030h %></button>
+       <button type="button" class="btn btn-primary">Domingo 11:00h <%= f.check_box :d_11h %></button>
+       <button type="button" class="btn btn-primary">Domingo 11:30h <%= f.check_box :d_1130h %></button>
+       <button type="button" class="btn btn-primary">Domingo 12:00h <%= f.check_box :d_12h %></button>
+       <button type="button" class="btn btn-primary">Domingo 12:30h <%= f.check_box :d_1230h %></button>
+       <button type="button" class="btn btn-primary">Domingo 13:00h <%= f.check_box :d_13h %></button>
+       <button type="button" class="btn btn-primary">Domingo 13:30h <%= f.check_box :d_1330h %></button>
+       <button type="button" class="btn btn-primary">Domingo 14:00h <%= f.check_box :d_14h %></button>
+       <button type="button" class="btn btn-primary">Domingo 14:30h <%= f.check_box :d_1430h %></button>
+       <button type="button" class="btn btn-primary">Domingo 15:00h <%= f.check_box :d_15h %></button>
+       <button type="button" class="btn btn-primary">Domingo 15:30h <%= f.check_box :d_1530h %></button>
+       <button type="button" class="btn btn-primary">Domingo 16:00h <%= f.check_box :d_16h %></button>
+       <button type="button" class="btn btn-primary">Domingo 16:30h <%= f.check_box :d_1630h %></button>
+       <button type="button" class="btn btn-primary">Domingo 17:00h <%= f.check_box :d_17h %></button>
+       <button type="button" class="btn btn-primary">Domingo 17:30h <%= f.check_box :d_1730h %></button>
+       <button type="button" class="btn btn-primary">Domingo 18:00h <%= f.check_box :d_18h %></button>
+       <button type="button" class="btn btn-primary">Domingo 18:30h <%= f.check_box :d_1830h %></button>
+       <button type="button" class="btn btn-primary">Domingo 19:00h <%= f.check_box :d_19h %></button>
+       <button type="button" class="btn btn-primary">Domingo 19:30h <%= f.check_box :d_1930h %></button>
+       <button type="button" class="btn btn-primary">Domingo 20:00h <%= f.check_box :d_20h %></button>
+       <button type="button" class="btn btn-primary">Domingo 20:30h <%= f.check_box :d_2030h %></button>
+       <button type="button" class="btn btn-primary">Domingo 21:00h <%= f.check_box :d_21h %></button>
+       <button type="button" class="btn btn-primary">Domingo 21:30h <%= f.check_box :d_2130h %></button>
+       <button type="button" class="btn btn-primary">Domingo 22:00h <%= f.check_box :d_22h %></button>
+       <button type="button" class="btn btn-primary">Domingo 22:30h <%= f.check_box :d_2230h %></button>
+       <button type="button" class="btn btn-primary">Domingo 23:00h <%= f.check_box :d_23h %></button>
+       <button type="button" class="btn btn-primary">Domingo 23:30h <%= f.check_box :d_2330h %></button>
+<div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+  <%= link_to 'Back', myhorarios_configs_path %>
+<% end %>
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+</div>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  

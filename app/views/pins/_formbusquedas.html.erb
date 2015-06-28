@@ -1,0 +1,82 @@
+<div class="container">
+  
+
+
+  <div class="jumbotron">
+    
+ 
+  <h1>Listado de Productos</h1>
+  <p>Este Apartado es exclusivamente para publicar tu catalogo de productos...
+           </p>
+
+
+         <!-- aqui comienza el acordeon -->  
+<div class="container"> 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          Saber más
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+        Ya bien para ponerlos a la venta (A traves de Paypal) o bien, si solo deseas que tus productos esten visibles al gran publico, solo como catalogo. Puedes publicar cualquier cosa, relacionada con tu negocio, y crear tantos Items como creas necearios. Tambien puedes editarlos, y borrarlos cuando lo necesites. Estos estaran visibles en las apps, en su apartado correspondiente, en tiempo reeal. Convierte de este modo facil y practico  en tu mejor escaparate.  
+
+</div>
+</div>
+</div>
+</div>
+<!-- aqui termina el acordeon -->   
+</div>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Foto</th>
+      <th>Categoria</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>precio</th>
+      <th>Stock</th>
+      <th>Referencia</th>
+      <th>Fecha creacion</th>
+      <th>Fecha de edicion</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pins.each do |pin| %>
+      <tr>
+        <td><%= image_tag pin.avatar.url :peque %></td>
+        <td><%= pin.categoria %></td>
+        <td><%= pin.name %></td>
+        <td><%= pin.descripcion %></td>
+        <td><%= pin.price %></td>
+        <td><%= pin.stock %></td>
+        <td><%= pin.referencia %></td>
+        <td><%= pin.created_at %></td>
+        <td><%= pin.updated_at %></td>
+        <td>
+          <%= link_to 'Show', pin %>
+          
+        </td>
+        <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
+        <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Crear nuevo Articulo', new_pin_path %>
+
+
+</div>
+</div>

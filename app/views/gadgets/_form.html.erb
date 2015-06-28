@@ -1,0 +1,182 @@
+<div class="container">
+
+<%= form_for(@gadget) do |f| %>
+  <% if @gadget.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gadget.errors.count, "error") %> prohibited this gadget from being saved:</h2>
+
+      <ul>
+      <% @gadget.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("1.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Calendario</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :calendar %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("2.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Horarios</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :horarios %></button>    Activar/Desactivar
+       
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("3.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Notificaciones Push</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :push %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("4.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Chat</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :chat %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("5.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Paypal</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :paypal %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("6.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Promos</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :promos %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("7.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Reservas Online</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :reservasarticulos %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("8.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Cita Previa</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+       <button type="button" class="btn btn-primary"><%= f.check_box :cita_previa %></button>    Activar/Desactivar
+     </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= link_to image_tag("9.jpg", :size=>"400x400") %>
+      <div class="caption">
+        <h3>Telefono de Contacto</h3>
+        <p>Activa este Gadget,si necesitas que tus clientes 
+          reserven algún articulo de tu catalogo, o pidan cita previa</p>
+          <br>
+        <div class="field">
+          <button type="button" class="btn btn-primary"><%= f.check_box :llamada_telefono %></button>    Activar/Desactivar
+       
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+<% end %>
+</div>

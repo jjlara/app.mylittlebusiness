@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+     <div class="well">
+      <h1>Crea/Edita una nueva promoción</h1>
+
+<%= form_for @promo, :html => {:multipart => true} do |f| %>
+  <% if @promo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@promo.errors.count, "error") %> prohibited this promo from being saved:</h2>
+
+      <ul>
+      <% @promo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :enlace %><br>
+    <%= f.text_field :enlace %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :fotospromo %><br>
+    <%= f.file_field :fotospromo, :class => "btn btn-primary" %>
+  </div>
+  
+  
+
+  <div class="actions">
+    <%= f.submit "Crear/Editar", :class => "btn btn-primary"%>
+  </div>
+  <%= link_to 'back' , promos_path %>
+<% end %>
+
+
+</div>
+</div>
+</div>
+</div>
